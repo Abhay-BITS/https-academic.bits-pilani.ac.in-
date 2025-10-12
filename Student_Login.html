@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Students Login</title>
+    <link rel="shortcut icon" href="Images/favicon.ico" />
+    <link type="text/css" href="css/mystyle.css" rel="stylesheet" />
+    <link type="text/css" href="css/reset.css" rel="stylesheet" />
+    <link type="text/css" href="css/module.css" rel="stylesheet" />
+    <link type="text/css" href="css/main.css" rel="stylesheet" />
+    <script src="jquery.js" type="text/javascript"></script>
+    <script type="text/javascript" src="Scripts/Footer.js"></script>
+    <script type="text/javascript" src="Scripts/Disable_BackButton.js"></script>
+    <style>
+        .button {
+            background-color: #4FA0F2; 
+            padding: 2px 4px;
+            font: 13px sans-serif;
+            text-decoration: none;
+            border: 1px solid #4FA0F2;
+            border-color: #4FA0F2 #444 #444 #4FA0F2;
+            color: white;
+            font-size:14px;
+            font-weight:bold
+        }
+    </style>
+
+    <script type="text/javascript">
+        var OAUTHURL = 'https://accounts.google.com/o/oauth2/auth?';
+        var SCOPE = 'https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/userinfo.email';
+        var CLIENTID = '668519179587-ld67oi74a4aiq45opesahghllr239tss.apps.googleusercontent.com';
+        var REDIRECT = 'https://academic.bits-pilani.ac.in';
+        var TYPE = 'token';
+        var _url = OAUTHURL + 'scope=' + SCOPE + '&client_id=' + CLIENTID + '&redirect_uri=' + REDIRECT + '&response_type=' + TYPE;
+
+        function login() {
+            // Fake login - bypass Google OAuth and redirect to dashboard
+            $("#HiddenField2").val("fake_access_token_for_demo");
+            
+            // Redirect to student dashboard
+            window.location.href = 'student/student-dashboard.html';
+        }
+
+        function gup(url, name) {
+            name = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
+            var regexS = "[\\#&]" + name + "=([^&#]*)";
+            var regex = new RegExp(regexS);
+            var results = regex.exec(url);
+            if (results == null)
+                return "";
+            else
+                return results[1];
+        }
+    </script>
+</head>
+<body>
+    <form name="form1" method="post" action="./Student_Login.aspx" id="form1">
+<div>
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjAwOTUxOTExMWRkGjh6PkticCmxFPZNyWQUpCh0IyVJkzVVWdmOjAAkTC4=" />
+</div>
+
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="5DFE0DCF" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAATSy3NUDHJSDTIPeyPsGSanzfg78Z8BXhXifTCAVkevd8xtyHrovi212ncfLzpQeGZnQYxi5ZXxFNgZq2+18mLmCqMeaVhIAkatcCfQzoKyvXS4e0eRjKSGUEtp+1YWQes=" />
+</div>
+        <div id="main" align="center">
+            <table id="t1" border="0" cellpadding="0" cellspacing="0" width="100% "
+            bgcolor="White">
+                <tr>
+                    <td>
+                        <div id="Div1" align="left">
+                            <div class="headerWrapper">
+                                <div class="headerWrapperFix">
+                                    <h1 class="hidden">
+                                    BITS Pilani</h1>
+                                    <div class="logoWrapper">
+                                     <a href="https://academic.bits-pilani.ac.in/" class="logo" target="_blank">
+                                         <img src="images/AUGSD.jpg"  />
+                                     </a>
+                                    </div>
+
+                                 <ul class="siteInfo" style="right: 110px; width: 380px; top: 8px; height: 50px">
+                                    <li style="width: 435px">
+                                        <p class="siteLog" style="text-align: center">
+                                            <span style="font-size: 0.9em"><span style="font-size: 1.1em">AUGS-AGSR Division</span> </span>
+                                            <br />
+                                             <span style="font-size: 0.6em">Academic-Undergraduate Studies Division</span>
+                                            <br />
+                                            <span style="font-size: 0.6em">Academic-Graduate Studies & Research Division</span>
+                                        </p>
+                                    </li>
+                                </ul>
+
+                                
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+               
+                <tr>
+                    <td>
+                        <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="height: 300px">
+                            <tr>
+                                <td id="contentpane" style="width: 100%; vertical-align: top">
+                                    <div align="center">
+                                        <br /><br />
+    <div align="center">
+<table border="0" id="table_attendance_details" cellpadding="0" width="80%" cellspacing="0" >
+    <tbody>
+
+         <tr><td style="height:90px"></td></tr>
+
+      
+
+		<tr valign="top">
+			<td class="head_already" style="height: 30px"> <div style="text-align: center">
+			 <span> &nbsp;Student Login</span></div>
+			 </td>
+		</tr>
+	</tbody>
+	</table><br />
+    </div>
+
+                                  <!--
+                                 <div style="text-align: right">    
+                                  <a href="#" temp_href="#" style="display:none; font-size: 16px; color: Blue; font-weight: bold; " id="logoutText" target='myIFrame' onclick="myIFrame.location='https://www.google.com/accounts/Logout'; startLogoutPolling();return false;"> Click here to logout </a>
+                                  </div>
+                                 <input type="submit" name="Button1" value="Log in using your BITS Pilani, Email Account" id="Button1" class="button" style="height: 35px;width:450px" />
+                            -->
+
+                         <input onClick='login();' id="loginText"' type="button" 
+                            value="Log in using your BITS Pilani, Email Account" align="middle" 
+                            style="border-style: outset; height: 30px" />
+                                        
+                                        <iframe name='myIFrame' id="myIFrame" style='display:none'></iframe><br /><br />
+                                        
+                                        <div id="myEmail"><span style="font-size:16px">Example : <em>xyz@pilani.bits-pilani.ac.in</em></span></div>
+
+                                        <br />
+                                        <div align="center">
+                                            <input type="submit" name="linkPage" value="Please click here to Continue" id="linkPage" style="width:600px;display: none;font-size: 14px;" />
+                                        </div>
+
+                                        <br /><br />
+                                       
+                                        <input type="hidden" name="HiddenField2" id="HiddenField2" />
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <footer id="webfooter">
+            <div class="footerWrapper">
+            </div>
+            <div id="Div2" align="left">
+                <div class="cpInfoFixWrapper">
+                    <div class="cpInfoFix">
+                        <p class="info">
+                            An institution deemed to be a University estd. vide Sec.3 of the UGC Act,1956 under
+                            notification # F.12-23/63.U-2 of Jun 18,1964
+                        </p>
+                        <p>
+                            &copy; 2024 AUGS-AGSR DIVISION, FD-II, BITS Pilani, Pilani Campus
+                        </p>
+                        <p class="info">
+                            Release Version 1.0
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer> 
+    </form>
+</body>
+</html>

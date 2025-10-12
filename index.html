@@ -1,0 +1,694 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><title>
+	Welcome to AUGSD-AGSRD BITS Pilani
+</title><meta name="google-site-verification" content="c9XcTd5Wkih_KhNi0uU2rL0_cnsX8CPTf3mg-mh3zaE" /><link type="text/css" href="Styles/reset.css" rel="stylesheet" /><link type="text/css" href="Styles/module.css" rel="stylesheet" /><link type="text/css" href="Styles/main.css" rel="stylesheet" />
+
+    <script type="text/javascript" src="Scripts/jquery-1.4.1.min.js"></script>
+    <script type="text/javascript" src="Scripts/jquery.colorbox.js"></script>
+    <script type="text/javascript" src="Scripts/main.js"></script>
+    <script type="text/javascript" src="Scripts/datetimepicker.js"></script>
+    <script type="text/javascript" src="Scripts/Calendar.js"></script>
+<meta name="google-site-verification" content="iAIJUtnlKH47lk5smeejutB4b6FJSlFqA7RNFCi9PxM" />
+    
+    <style>
+        .myButton
+        {
+            -moz-box-shadow: 0px 1px 0px 0px #f0f7fa;
+            width: 130px;
+            -webkit-box-shadow: 0px 1px 0px 0px #f0f7fa;
+            box-shadow: 0px 1px 0px 0px #f0f7fa;
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #33bdef), color-stop(1, #019ad2));
+            background: -moz-linear-gradient(top, #33bdef 5%, #019ad2 100%);
+            background: -webkit-linear-gradient(top, #33bdef 5%, #019ad2 100%);
+            background: -o-linear-gradient(top, #33bdef 5%, #019ad2 100%);
+            background: -ms-linear-gradient(top, #33bdef 5%, #019ad2 100%);
+            background: linear-gradient(to bottom, #33bdef 5%, #019ad2 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#33bdef', endColorstr='#019ad2',GradientType=0);
+            background-color: #33bdef;
+            -moz-border-radius: 6px;
+            -webkit-border-radius: 6px;
+            border-radius: 6px;
+            border: 1px solid #057fd0;
+            display: inline-block;
+            cursor: pointer;
+            color: #ffffff;
+            font-family: Arial;
+            font-size: 17px;
+            font-weight: bold;
+            padding: 12px 65px;
+            text-decoration: none;
+            text-shadow: 0px -1px 0px #5b6178;
+        }
+        .myButton:hover
+        {
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #019ad2), color-stop(1, #33bdef));
+            background: -moz-linear-gradient(top, #019ad2 5%, #33bdef 100%);
+            background: -webkit-linear-gradient(top, #019ad2 5%, #33bdef 100%);
+            background: -o-linear-gradient(top, #019ad2 5%, #33bdef 100%);
+            background: -ms-linear-gradient(top, #019ad2 5%, #33bdef 100%);
+            background: linear-gradient(to bottom, #019ad2 5%, #33bdef 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#019ad2', endColorstr='#33bdef',GradientType=0);
+            background-color: #019ad2;
+        }
+        .myButton:active
+        {
+            position: relative;
+            top: 1px;
+        }
+        .myButton1
+        {
+            width: 130px;
+            -moz-box-shadow: 0px 1px 0px 0px #f0f7fa;
+            -webkit-box-shadow: 0px 1px 0px 0px #f0f7fa;
+            box-shadow: 0px 1px 0px 0px #f0f7fa;
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #33bdef), color-stop(1, #C98A0E));
+            background: -moz-linear-gradient(top, #EBA10E 5%, #C98A0E 100%);
+            background: -webkit-linear-gradient(top, #EBA10E 5%, #C98A0E 100%);
+            background: -o-linear-gradient(top, #EBA10E 5%, #C98A0E 100%);
+            background: -ms-linear-gradient(top, #EBA10E 5%, #C98A0E 100%);
+            background: linear-gradient(to bottom, #EBA10E 5%, #C98A0E 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#EBA10E', endColorstr='#C98A0E',GradientType=0);
+            background-color: #EBA10E;
+            -moz-border-radius: 6px;
+            -webkit-border-radius: 6px;
+            border-radius: 6px;
+            border: 1px solid #C98A0E;
+            display: inline-block;
+            cursor: pointer;
+            color: #ffffff;
+            font-family: Arial;
+            font-size: 17px;
+            font-weight: bold;
+            padding: 12px 65px;
+            text-decoration: none;
+            text-shadow: 0px -1px 0px #5b6178;
+        }
+        .myButton1:hover
+        {
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #C98A0E), color-stop(1, #EBA10E));
+            background: -moz-linear-gradient(top, #C98A0E 5%, #EBA10E 100%);
+            background: -webkit-linear-gradient(top, #C98A0E 5%, #EBA10E 100%);
+            background: -o-linear-gradient(top, #C98A0E 5%, #EBA10E 100%);
+            background: -ms-linear-gradient(top, #C98A0E 5%, #EBA10E 100%);
+            background: linear-gradient(to bottom, #C98A0E 5%, #EBA10E 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#C98A0E', endColorstr='#EBA10E',GradientType=0);
+            background-color: #C98A0E;
+        }
+        .myButton1:active
+        {
+            position: relative;
+            top: 1px;
+        }
+    </style>
+    <style>
+        .vl
+        {
+            border-left: 1px dotted green;
+            height: 100px;
+        }
+    </style>
+    <style>
+        .blink1
+        {
+            animation-duration: 1s;
+            animation-name: blink;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-timing-function: steps(2, start);
+        }
+        @keyframes blink {from{opacity:1;}
+        to
+        {
+            opacity: 0;
+        }
+        }</style>
+
+    <script>
+        (function blink() {
+            $('.blink_me').fadeOut(500).fadeIn(500, blink);
+        })();
+    </script>
+
+    <style>
+        .myClass img
+        {
+            border: 0;
+        }
+    </style>
+</head>
+<body>
+    <form name="form1" method="post" action="./" id="form1">
+<div>
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKLTY0ODg0MzQxNw9kFgICAw9kFgICCg9kFgICAg8PFgIeBFRleHQFBDIwMjVkZGTa5mEkhGahQSCZtIt6LrrZK0BSf8pewIyAFZEdgoHCNQ==" />
+</div>
+
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="90059987" />
+</div>
+    <div class="headerWrapper">
+        <div class="headerWrapperFix">
+            <h1 class="hidden">
+                BITS Pilani</h1>
+            <div class="logoWrapper">
+                <a href="index.aspx" class="logo">
+                    <img src="images/AUGSD.jpg" alt="AUGSD logo" />
+                    <img src="images/AUGS-AGSR-Header.jpg" style="float: right" />
+                </a>
+            </div>
+            <ul class="commonNav">
+                <li><a href="http://www.bits-pilani.ac.in/" target="_blank">University Website</a></li>
+                <li><a href="http://www.bits-pilani.ac.in/pilani" target="_blank">Pilani Campus Website</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="contentWrapper">
+        <div class="contentFix">
+            <div class="twoCol">
+                <table width="100%" align="center" border="0">
+                    <tbody>
+                        <tr>
+                            <td width="100%" style="vertical-align: top;" colspan="4">
+                                <img src="images/Banner.jpg" alt="banner" width="944" height="176" />
+                                <div class="font1">
+                                    <br />
+                                    <h3 style="text-align: center">
+                                        AUGS Division : <span style="font-size: 14px; color: black">All academic matters related
+                                            to First Degree (undergraduate) programmes are dealt by AUGS Division. </span>
+                                    </h3>
+                                    <br />
+                                    <h3 style="text-align: center">
+                                        AGSR Division : <span style="font-size: 14px; color: black;">All academic matters related
+                                            to Higher Degree (graduate) and Ph.D programmes are dealt by AGSR Division.
+                                        </span>
+                                    </h3>
+                                    <br />
+                                    <hr style="border-top: dotted 1px #E4E3E4;" />
+                                </div>
+                            </td>
+                        </tr>
+
+
+                         
+
+                    
+                      
+                            
+                       
+                        <tr>
+                            <td style="vertical-align: top" colspan="4">
+                                <div class="font1">
+                                    <h3>
+                                        <a href="Institute_Important_Documents.aspx"><span style="color:red;font-size:18px" class="blink_me">Click here</span>&nbsp;<span style="color: blue; font-size: 20px"
+                                            class="blink">for Important Documents of the Institute</span></a></h3>
+                                </div>
+                            </td>
+                        </tr>
+                      
+                       
+                             
+                              
+                        
+                         
+                       
+                     
+
+                         <tr>
+                            <td colspan="4" style="height: 5px">
+                            </td>
+                        </tr>
+
+
+                    
+
+
+
+                        <tr>
+                            <td style="vertical-align: top" colspan="4">
+                                
+                               
+                            </td>
+                        </tr>
+                        <!--
+                            <tr>
+
+                                <td style="width: 30%; vertical-align: top">
+                                    <div class="font1">
+                                        <h3>Contact Us</h3>
+                                        <br />
+                                        <p><strong>AUGS Division Office Phone:</strong></p>
+                                         <div class="desc">
+                                            <ul>
+                                                <li>01596-255263</li>
+
+                                            </ul>
+                                        </div>
+
+                                        </div>
+                                        
+                                </td>
+
+                                <td style="width: 30%; vertical-align: top">
+                                    <div class="font1">
+                                        <h3>&nbsp;</h3>
+                                        <br />
+                                        <p><strong>AGSR Division Office Phone:</strong></p>
+                                        <div class="desc">
+                                            <ul>
+                                                <li>01596-255204</li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td style="width: 5%; vertical-align: top">
+                                    <br />
+                                    <div class="vl"></div>
+                                </td>
+                                <td style="width: 35%; vertical-align: top"><br />
+                                    <a href="Faculty_Login.aspx" class="myButton">Faculty Login</a><br /><br />
+                                    <a href="Student_Login.aspx" class="myButton1">Student Login</a><br /><br />
+                                    <a href="HOD_Login.aspx" class="myButton">HOD Login</a>
+                                </td>
+                            </tr>
+                            -->
+                       
+                        <tr>
+                            <td colspan="4">
+                                <div>
+                                    <span style="font-size: 14px; color: darkred"><strong>Quick Contacts:</strong></span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" style="width: 65%; vertical-align: top">
+                                <table id="preference_table" width="600px" class="body_txt_in" style="border: 1px solid #3D5BB1;
+                                    border-collapse: collapse" cellspacing="0" cellpadding="3">
+                                    <tr>
+                                        <td style="width: 2%; background-color: transparent; border: 1px solid #EAEAEA;">
+                                            <b>#</b>
+                                        </td>
+                                        <td style="width: 40%; background-color: transparent; border: 1px solid #EAEAEA;">
+                                            <b>Issue related to</b>
+                                        </td>
+                                        <td style="width: 8%; background-color: transparent; border: 1px solid #EAEAEA;">
+                                            <b>Office</b>
+                                        </td>
+                                        <td style="width: 35%; background-color: transparent; border: 1px solid #EAEAEA;">
+                                            <b>E-mail</b>
+                                        </td>
+                                        <td style="width: 15%; background-color: transparent; border: 1px solid #EAEAEA;">
+                                            <b>Phone No.</b>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="background-color: transparent; border: 1px solid #EAEAEA;">
+                                            <span style="font-size: 11px">1.</span>
+                                        </td>
+                                        <td style="background-color: transparent; border: 1px solid #EAEAEA;">
+                                            <span style="font-size: 11px">Provisional Degree, Other Certificates (First Degree), general queries</span>
+                                        </td>
+                                        <td style="background-color: transparent; border: 1px solid #EAEAEA;">
+                                            <span style="font-size: 10px"><strong>AUGSD</strong></span>
+                                        </td>
+                                        <td style="background-color: transparent; border: 1px solid #EAEAEA;">
+                                            <span style="font-size: 11px">augsdpilani@pilani.bits-pilani.ac.in</span>
+                                        </td>
+                                        <td style="background-color: transparent; border: 1px solid #EAEAEA;">
+                                            <span style="font-size: 11px">+91-1596-255263</span>
+                                        </td>
+                                    </tr>
+
+                                     <tr>
+                                        <td style="background-color: transparent; border: 1px solid #EAEAEA;">
+                                            <span style="font-size: 11px">2.</span>
+                                        </td>
+                                        <td style="background-color: transparent; border: 1px solid #EAEAEA;">
+                                            <span style="font-size: 11px">Provisional Degree,Other Certificates (Higher Degree, Ph.D.), general queries</span>
+                                        </td>
+                                        <td style="background-color: transparent; border: 1px solid #EAEAEA;">
+                                            <span style="font-size: 10px"><strong>AGSRD</strong></span>
+                                        </td>
+                                        <td style="background-color: transparent; border: 1px solid #EAEAEA;">
+                                            <span style="font-size: 11px">agsrd.office@pilani.bits-pilani.ac.in</span>
+                                        </td>
+                                        <td style="background-color: transparent; border: 1px solid #EAEAEA;">
+                                            <span style="font-size: 11px">+91-1596-255586</span>
+                                        </td>
+                                    </tr>
+                                   
+                                    <tr>
+                                        <td style="background-color: transparent; border: 1px solid #EAEAEA;">
+                                            <span style="font-size: 11px">3.</span>
+                                        </td>
+                                        <td style="background-color: transparent; border: 1px solid #EAEAEA;">
+                                            <span style="font-size: 11px">For First Degree: Transcript [(First Degree Graduated & Continuing students), Grade Sheet (Only Continuing Students  of First Degree) and Education Verification (Offline)] & WES Evaluation Documents</span>
+                                        </td>
+                                        <td style="background-color: transparent; border: 1px solid #EAEAEA;">
+                                            <span style="font-size: 10px"><strong>AUGSD</strong></span>
+                                        </td>
+                                        <td style="background-color: transparent; border: 1px solid #EAEAEA;">
+                                            <span style="font-size: 11px">augsdpilani@pilani.bits-pilani.ac.in</span>
+                                        </td>
+                                        <td style="background-color: transparent; border: 1px solid #EAEAEA;">
+                                            <span style="font-size: 11px">+91-1596-255302</span>
+                                        </td>
+                                    </tr>
+
+                                     <tr>
+                                        <td style="background-color: transparent; border: 1px solid #EAEAEA;">
+                                            <span style="font-size: 11px">4.</span>
+                                        </td>
+                                        <td style="background-color: transparent; border: 1px solid #EAEAEA;">
+                                            <span style="font-size: 11px">For Higher Degree & Ph.D. :Transcript [(Higher Degree & Ph.D. Graduated & Continuing students), Grade Sheet (Only Continuing Students  of Higher Degree & Ph.D.) and Education Verification (Offline)] & WES Evaluation Documents</span>
+                                        </td>
+                                        <td style="background-color: transparent; border: 1px solid #EAEAEA;">
+                                            <span style="font-size: 10px"><strong>AGSRD</strong></span>
+                                        </td>
+                                        <td style="background-color: transparent; border: 1px solid #EAEAEA;">
+                                            <span style="font-size: 11px">agsrd.office@pilani.bits-pilani.ac.in</span>
+                                        </td>
+                                        <td style="background-color: transparent; border: 1px solid #EAEAEA;">
+                                            <span style="font-size: 11px">+91-1596-255586</span>
+                                        </td>
+                                    </tr>
+                                   
+                                   
+
+                                    <tr>
+                                        <td style="background-color: transparent; border: 1px solid #EAEAEA;">
+                                            <span style="font-size: 11px">5.</span>
+                                        </td>
+                                        <td style="background-color: transparent; border: 1px solid #EAEAEA;">
+                                            <span style="font-size: 11px">Alumni Website Login issues (Graduated Students)</span>
+                                        </td>
+                                        <td style="background-color: transparent; border: 1px solid #EAEAEA;">
+                                            <span style="font-size: 10px"><strong>AUGSD</strong></span>
+                                        </td>
+                                        <td style="background-color: transparent; border: 1px solid #EAEAEA;">
+                                            <span style="font-size: 11px">augsdpilani@pilani.bits-pilani.ac.in</span>
+                                        </td>
+                                        <td style="background-color: transparent; border: 1px solid #EAEAEA;">
+                                            <span style="font-size: 11px">+91-1596-255220</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="background-color: transparent; border: 1px solid #EAEAEA;">
+                                            <span style="font-size: 11px">6.</span>
+                                        </td>
+                                        <td style="background-color: transparent; border: 1px solid #EAEAEA;">
+                                            <span style="font-size: 11px">AUGSD/AGSRD Website Login issues (Continuing Students)</span>
+                                        </td>
+                                        <td style="background-color: transparent; border: 1px solid #EAEAEA;">
+                                            <span style="font-size: 10px"><strong>AUGSD</strong></span>
+                                        </td>
+                                        <td style="background-color: transparent; border: 1px solid #EAEAEA;">
+                                            <span style="font-size: 11px">augsdpilani@pilani.bits-pilani.ac.in</span>
+                                        </td>
+                                        <td style="background-color: transparent; border: 1px solid #EAEAEA;">
+                                            <span style="font-size: 11px">+91-1596-255520</span>
+                                        </td>
+                                    </tr>
+
+                                     <tr>
+                                        <td style="background-color: transparent; border: 1px solid #EAEAEA;">
+                                            <span style="font-size: 11px">7.</span>
+                                        </td>
+                                        <td style="background-color: transparent; border: 1px solid #EAEAEA;">
+                                            <span style="font-size: 11px">First Degree Education Verification [(Online)] - Only For Students who studied OnCampus in Regular Mode</span>
+                                        </td>
+                                        <td style="background-color: transparent; border: 1px solid #EAEAEA;">
+                                            <span style="font-size: 10px"><strong>AUGSD</strong></span>
+                                        </td>
+                                        <td style="background-color: transparent; border: 1px solid #EAEAEA;">
+                                            <span style="font-size: 11px">augsdpilani@pilani.bits-pilani.ac.in</span>
+                                        </td>
+                                        <td style="background-color: transparent; border: 1px solid #EAEAEA;">
+                                            <span style="font-size: 11px">+91-1596-255520</span>
+                                        </td>
+                                    </tr>
+
+                                     <tr>
+                                        <td style="background-color: transparent; border: 1px solid #EAEAEA;">
+                                            <span style="font-size: 11px">8.</span>
+                                        </td>
+                                        <td style="background-color: transparent; border: 1px solid #EAEAEA;">
+                                            <span style="font-size: 11px">Higher Degree & Ph.D. Education Verification [(Online)] - Only For Students who studied OnCampus in Regular Mode</span>
+                                        </td>
+                                        <td style="background-color: transparent; border: 1px solid #EAEAEA;">
+                                            <span style="font-size: 10px"><strong>AGSRD</strong></span>
+                                        </td>
+                                        <td style="background-color: transparent; border: 1px solid #EAEAEA;">
+                                            <span style="font-size: 11px">agsrd.office@pilani.bits-pilani.ac.in</span>
+                                        </td>
+                                        <td style="background-color: transparent; border: 1px solid #EAEAEA;">
+                                            <span style="font-size: 11px">+91-1596-255586</span>
+                                        </td>
+                                    </tr>
+
+
+                                     <tr>
+                                        <td style="background-color: transparent; border: 1px solid #EAEAEA;">
+                                            <span style="font-size: 11px">9.</span>
+                                        </td>
+                                        <td style="background-color: transparent; border: 1px solid #EAEAEA;">
+                                            <span style="font-size: 11px">Time Table (Classroom Bookings, Course Description,etc.)</span>
+                                        </td>
+                                        <td style="background-color: transparent; border: 1px solid #EAEAEA;">
+                                            <span style="font-size: 10px"><strong>AUGSD</strong></span>
+                                        </td>
+                                        <td style="background-color: transparent; border: 1px solid #EAEAEA;">
+                                            <span style="font-size: 11px">timetable@pilani.bits-pilani.ac.in</span>
+                                        </td>
+                                        <td style="background-color: transparent; border: 1px solid #EAEAEA;">
+                                            <span style="font-size: 11px">+91-1596-255314</span>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td style="background-color: transparent; border: 1px solid #EAEAEA;">
+                                            <span style="font-size: 11px">10.</span>
+                                        </td>
+                                        <td style="background-color: transparent; border: 1px solid #EAEAEA;">
+                                            <span style="font-size: 11px">Examination</span>
+                                        </td>
+                                        <td style="background-color: transparent; border: 1px solid #EAEAEA;">
+                                            <span style="font-size: 10px"><strong>AUGSD</strong></span>
+                                        </td>
+                                        <td style="background-color: transparent; border: 1px solid #EAEAEA;">
+                                            <span style="font-size: 11px">examinations@pilani.bits-pilani.ac.in</span>
+                                        </td>
+                                        <td style="background-color: transparent; border: 1px solid #EAEAEA;">
+                                            <span style="font-size: 11px">+91-1596-255314</span>
+                                        </td>
+                                    </tr>
+
+                                     <tr>
+                                        <td style="background-color: transparent; border: 1px solid #EAEAEA;">
+                                            <span style="font-size: 11px">11.</span>
+                                        </td>
+                                        <td style="background-color: transparent; border: 1px solid #EAEAEA;">
+                                            <span style="font-size: 11px">ERP related issues</span>
+                                        </td>
+                                        <td style="background-color: transparent; border: 1px solid #EAEAEA;">
+                                            <span style="font-size: 10px"><strong>AUGSD</strong></span>
+                                        </td>
+                                        <td style="background-color: transparent; border: 1px solid #EAEAEA;">
+                                            <span style="font-size: 10px">abhisek.dadhich@pilani.bits-pilani.ac.in</span>
+                                        </td>
+                                        <td style="background-color: transparent; border: 1px solid #EAEAEA;">
+                                            <span style="font-size: 11px">+91-1596-255519</span>
+                                        </td>
+                                    </tr>
+
+                                     <tr>
+                                        <td style="background-color: transparent; border: 1px solid #EAEAEA;">
+                                            <span style="font-size: 11px">12.</span>
+                                        </td>
+                                        <td style="background-color: transparent; border: 1px solid #EAEAEA;">
+                                            <span style="font-size: 11px">Higher Degree Teaching Assistant (HDTA)</span>
+                                        </td>
+                                        <td style="background-color: transparent; border: 1px solid #EAEAEA;">
+                                            <span style="font-size: 10px"><strong>AGSRD</strong></span>
+                                        </td>
+                                        <td style="background-color: transparent; border: 1px solid #EAEAEA;">
+                                            <span style="font-size: 10px">agsrd.office@pilani.bits-pilani.ac.in</span>
+                                        </td>
+                                        <td style="background-color: transparent; border: 1px solid #EAEAEA;">
+                                            <span style="font-size: 11px">+91-1596-255210</span>
+                                        </td>
+                                    </tr>
+
+                                     <tr>
+                                        <td style="background-color: transparent; border: 1px solid #EAEAEA;">
+                                            <span style="font-size: 11px">13.</span>
+                                        </td>
+                                        <td style="background-color: transparent; border: 1px solid #EAEAEA;">
+                                            <span style="font-size: 11px">Ph.D. Contingency Bills</span>
+                                        </td>
+                                        <td style="background-color: transparent; border: 1px solid #EAEAEA;">
+                                            <span style="font-size: 10px"><strong>AGSRD</strong></span>
+                                        </td>
+                                        <td style="background-color: transparent; border: 1px solid #EAEAEA;">
+                                            <span style="font-size: 10px">agsrd.office@pilani.bits-pilani.ac.in</span>
+                                        </td>
+                                        <td style="background-color: transparent; border: 1px solid #EAEAEA;">
+                                            <span style="font-size: 11px">+91-1596-255204</span>
+                                        </td>
+                                    </tr>
+
+                                     <tr>
+                                        <td style="background-color: transparent; border: 1px solid #EAEAEA;">
+                                            <span style="font-size: 11px">14.</span>
+                                        </td>
+                                        <td style="background-color: transparent; border: 1px solid #EAEAEA;">
+                                            <span style="font-size: 11px"> Scrutiny of Grade</span>
+                                        </td>
+                                        <td style="background-color: transparent; border: 1px solid #EAEAEA;">
+                                            <span style="font-size: 10px"><strong>Registrar Office</strong></span>
+                                        </td>
+                                        <td style="background-color: transparent; border: 1px solid #EAEAEA;">
+                                            <span style="font-size: 10px"> dyregistrar@pilani.bits-pilani.ac.in</span>
+                                        </td>
+                                        <td style="background-color: transparent; border: 1px solid #EAEAEA;">
+                                            <span style="font-size: 11px">+91-1596-255336</span>
+                                        </td>
+                                    </tr>
+
+
+                                    <tr>
+                                        <td style="background-color: transparent; border: 1px solid #EAEAEA;">
+                                            <span style="font-size: 11px">15.</span>
+                                        </td>
+                                        <td style="background-color: transparent; border: 1px solid #EAEAEA;">
+                                            <span style="font-size: 11px">BITS-RMIT Higher Education Academy</span>
+                                        </td>
+                                        <td style="background-color: transparent; border: 1px solid #EAEAEA;">
+                                            <span style="font-size: 10px"><strong>AUGSD</strong></span>
+                                        </td>
+                                        <td style="background-color: transparent; border: 1px solid #EAEAEA;">
+                                            <span style="font-size: 10px">bitsrmit.fd@pilani.bits-pilani.ac.in</span>
+                                        </td>
+                                        <td style="background-color: transparent; border: 1px solid #EAEAEA;">
+                                            <span style="font-size: 11px">+91-1596-255266</span>
+                                        </td>
+                                    </tr>
+
+                                     <tr>
+                                        <td style="background-color: transparent; border: 1px solid #EAEAEA;">
+                                            <span style="font-size: 11px">16.</span>
+                                        </td>
+                                        <td style="background-color: transparent; border: 1px solid #EAEAEA;">
+                                            <span style="font-size: 11px">BITS-UB (UBITS)</span>
+                                        </td>
+                                        <td style="background-color: transparent; border: 1px solid #EAEAEA;">
+                                            <span style="font-size: 10px"><strong>AUGSD</strong></span>
+                                        </td>
+                                        <td style="background-color: transparent; border: 1px solid #EAEAEA;">
+                                            <span style="font-size: 10px">bitsub.fd@pilani.bits-pilani.ac.in</span>
+                                        </td>
+                                        <td style="background-color: transparent; border: 1px solid #EAEAEA;">
+                                            <span style="font-size: 11px">+91-1596-255590</span>
+                                        </td>
+                                    </tr>
+
+                                     <tr>
+                                        <td style="background-color: transparent; border: 1px solid #EAEAEA;">
+                                            <span style="font-size: 11px">17.</span>
+                                        </td>
+                                        <td style="background-color: transparent; border: 1px solid #EAEAEA;">
+                                            <span style="font-size: 11px">BITS-ISU</span>
+                                        </td>
+                                        <td style="background-color: transparent; border: 1px solid #EAEAEA;">
+                                            <span style="font-size: 10px"><strong>AUGSD</strong></span>
+                                        </td>
+                                        <td style="background-color: transparent; border: 1px solid #EAEAEA;">
+                                            <span style="font-size: 10px">bitsisu.fd@pilani.bits-pilani.ac.in</span>
+                                        </td>
+                                        <td style="background-color: transparent; border: 1px solid #EAEAEA;">
+                                            <span style="font-size: 11px">+91-1596-255590</span>
+                                        </td>
+                                    </tr>
+
+
+
+
+                                    <tbody>
+                                    </tbody>
+                                </table>
+                            </td>
+                            <td style="width: 80px; vertical-align: top">
+                            </td>
+                            <td style="width: 35%; vertical-align: top;text-align:left" >
+                                <a href="https://erp.bits-pilani.ac.in/" class="myButton" target="_blank">ERP Login</a><br />
+                                <br />
+                                <a href="Faculty_Login.aspx" class="myButton1" target="_blank">Faculty Login</a><br />
+                                <br />
+                                <a href="Student_Login.html" class="myButton" target="_blank">Student Login</a><br />
+                                <br />
+                                <a href="HOD_Login.aspx" class="myButton1" target="_blank">HOD Login</a><br />
+                                <br />
+                                <a href="/Alumni/Login.aspx" class="myButton" target="_blank">Alumni Login</a>
+                                <br /><br />
+                                <a href="https://academic.bits-pilani.ac.in/eduverification/"  target="_blank"><span style="color: blue; font-size: 14px"><strong>For On-Campus Education Verification<br />(Third Party/Direct Employer)</strong></span></a>
+                                <br /><br />
+                                <span style="color: darkred; font-size: 12px"><strong>For WILP Student Please Contact: (registration@wilp.bits-pilani.ac.in) 01596-255395 / 01596-255216 / 01596-255343</strong></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width: 100%" colspan="4">
+                                <div>
+                                    <span style="font-size: 16px; color: darkred"><strong>Issue Specific Contacts :</strong></span>
+                                    <a href="Issue-Specific-Contact.aspx"><span style="font-size: 15px; color: blue"><strong>
+                                        Please click here for Issue Specific Contacts</strong></span></a>
+                                </div>
+                            </td>
+                        </tr>
+
+
+
+
+                        <tr>
+                            <td colspan="4" style="height: 5px">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br />
+                <!--
+                     <div align="center">
+
+                        <a href="Downloads/List of the students permitted for Late Registration Second Semester 2019-20.pdf"><span style="font-size:18px;color:blue"><strong>Late Registration Permitted Students List (II-Semester 2019-2020)</strong></span></a>
+                    </div>
+                    <br /><br />
+                        -->
+                
+
+
+                   
+            </div>
+
+        </div>
+    </div>
+    
+<div class="footerWrapper">
+		
+	</div>
+	<div class="cpInfoFixWrapper">
+		<div class="cpInfoFix">
+		
+<p>&copy; <span id="footercontrol_lblDate">2025</span> AUGS-AGSR DIVISION, FD-II, BITS Pilani, Pilani Campus</p>
+        
+   
+             
+              
+		</div>		
+	</div>
+    </form>
+
+
+
+</body>
+</html>

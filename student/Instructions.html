@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Instructions</title>
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="css/mystyle.css" />
+    <link type="text/css" href="css/reset.css" rel="stylesheet" />
+    <link type="text/css" href="css/module.css" rel="stylesheet" />
+    <link type="text/css" href="css/main.css" rel="stylesheet" />
+    <link type="text/css" href="css/jquery.autocomplete.css" rel="stylesheet" />
+    <script type="text/javascript" src="Scripts/jquery-1.4.1.min.js"></script>
+    <script type="text/javascript" src="Scripts/jquery.colorbox.js"></script>
+    <script type="text/javascript" src="Scripts/main.js"></script>
+    <script type="text/javascript" src="Scripts/jquery.min.js"></script>
+    <script type="text/javascript" src="Scripts/datetimepicker.js"></script>
+    <script type="text/javascript" src="Scripts/Disable_rightclick.js"></script>
+    <script type="text/javascript" src="Scripts/Footer.js"></script>
+    <script type="text/javascript" src="Scripts/Disable_BackButton.js"></script>
+    <script type="text/javascript" src="Scripts/jquery.autocomplete.js"></script>
+    <link type="text/css" href="Datepicker/datepicker_style.css" rel="stylesheet" />
+    <script type="text/javascript" src="Datepicker/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="Datepicker/jquery-ui.js"></script>
+    
+    <script type="text/javascript">
+        var window_style = "width=900,height=1000,toolbar=0,menubar=0,location=0,status=yes,scrollbars=yes,resizable=yes,left=50,top=50";
+        function Popup_window(window_url) {
+            window.open(window_url, "", window_style);
+        }
+        
+        // Function to handle checkbox and button interaction
+        function toggleContinueButton() {
+            var checkbox = document.getElementById('chk_agree');
+            var button = document.getElementById('btn_submit');
+            
+            if (checkbox.checked) {
+                button.disabled = false;
+            } else {
+                button.disabled = true;
+            }
+        }
+        
+        // Function to handle form submission
+        function handleSubmit() {
+            alert('Continue button clicked! This would normally proceed to the leave application form.');
+            // In a real application, this would redirect to the next page
+            // window.location.href = 'LeaveApplication.html';
+        }
+    </script>
+</head>
+<body>
+    <div id="main" align="center">
+        <table id="t1" border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="White">
+            <tr>
+                <td>
+                    <div id="Div1" align="left">
+                        <div class="headerWrapper">
+                            <div class="headerWrapperFix">
+                                <h1 class="hidden">BITS Pilani</h1>
+                                <div class="logoWrapper">
+                                     <a href="#" class="logo" target="_blank">
+                                         <img src="images/BITS_Pilani_campus_logo.gif" alt="BITS Logo" />
+                                     </a>
+                                </div>
+                                 
+                              <ul class="mainNav">
+                                 <li><a href="Instructions.html">Apply For Leaves</a></li>
+                                 <li><a href="https://academic.bits-pilani.ac.in/SWD/Student/Downloads/Parent's_Consent_Form.pdf" target="_blank">Download Parent's Consent Form</a></li>
+                                 <li><a href="View_Application_Status_Step1.html">Leaves Status</a></li>
+                            </ul>  
+                           
+                               <ul class="siteInfo" style="right: 110px; width: 380px; top: 8px; height: 50px">
+                                    <li style="width: 435px">
+                                        <p class="siteLog" style="text-align: center">
+                                            <br />
+                                            <span style="font-size: 0.9em"><span style="font-size: 1.1em">Student Welfare Division (SWD)</span> </span>
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+           <tr>
+                <td class="body_txt_in" style="height: 30px">
+                    <table id="UserInfo" style="width: 100%">
+                        <tbody>
+                            <tr>
+                                <td width="70%" align="left" style="margin-left:45px ">
+                                    <div> 
+                                        <span style="color:#211d70" ><strong><span style="color:#211d70">&nbsp;&nbsp;&nbsp;&nbsp;W</span>elcome</strong>,</span>
+                                        <span id="Name" style="display:inline-block;color:#211D70;font-weight:bold;width:469px;">ABHAY KUMAR MADDHESHIYA</span>
+                                    </div>
+                                </td>
+                                <td width="30%"> 
+                                    <table id="table_logout_details" width="100%">
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                   <div id="div_logout" align="right" style="margin-right:20px">
+                                                     <span id="lbl_current_date" style="color:#211D70;font-weight:bold;">Sunday, October 12, 2025</span>&nbsp;
+                                                       <span id="lbl_spacer" style="color:#211D70;font-weight:bold;">|</span>&nbsp;
+                                                   <a class="footer" href="SWD_Leave_PreProcessing.html"><strong><span style="font-size: 8pt">[Logout]</span></strong></a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>  
+            <tr>
+                <td>
+                    <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="height: 300px">
+                        <tr>
+                            <td id="contentpane" style="width: 100%; vertical-align: top">
+                                <div align="center">
+                                    <br /><br />
+                                    <div id="container">
+                                        <table border="0" id="table_attendance_details" cellpadding="0" width="80%" cellspacing="0" >
+                                            <tbody>
+		                                        <tr valign="top">
+			                                        <td class="head_already" style="height: 30px"> 
+                                                <div style="text-align: center">
+			                                            <span>Important Instructions</span>
+                                                </div>
+			                                         </td>
+		                                        </tr>
+	                                        </tbody>
+	                                    </table><br />
+                                    </div>
+
+                                    <div id="main_div" align="center">
+                                        <table border="0"  cellpadding="0" cellspacing="0" width="70%">
+                                            <tbody>
+	                                            <tr>
+	                                                <td valign="top">  
+	                                                    <table border="0" class="body_txt_in round_corner" cellpadding="0" cellspacing="0" style="width: 100%; height: 249px; border: 1px solid #4A9ACE;">
+                                                            <tbody>
+                                                                <tr>
+			                                                        <td colspan="3" style="background-color: #4A9ACE; height: 22px;">
+			                                                            <div class="boxHead">    
+			                                                                <div class="heading">Instructions</div>
+			                                                            </div>
+			                                                        </td>
+		                                                        </tr>
+		       
+		                                                        <tr>
+		                                                            <td colspan="3" style="height: 10px;">
+		                                                           	</td>
+		                                                        </tr>
+
+														<tr>
+															<td colspan="3">
+																<div align="left" style="margin-left:8px;margin-right:8px">
+																	<table><tr><td><span style='font-size:14px'><strong>1</span></td><td style='width:5px'></td><td><span style='font-size:14px'>Read all the instructions carefully. No further query in this regard will be entertained.</span></td></tr></table>
+                                                                        <table><tr><td><span style='font-size:14px'><strong>2</span></td><td style='width:5px'></td><td><span style='font-size:14px'>The leave should be applied at least 24 hours before the leave time. The warden will approve the leave every day between 6-8 PM (approximately). No phone call from the main gate will be entertained.</span></td></tr></table>
+                                                                        <table><tr><td><span style='font-size:14px'><strong>3</span></td><td style='width:5px'></td><td><span style='font-size:14px'>You have to upload a duly signed consent form at the time of applying for leave. If you have to attend any social function at your home, plan your travel accordingly. No further leave will be granted once you are back from this one-time post mid sem break.</span></td></tr></table>
+                                                                        <table><tr><td><span style='font-size:14px'><strong>4</span></td><td style='width:5px'></td><td><span style='font-size:14px'>The form you are submitting is only meant for the "leave management". For make-up or any other academic-related queries, please contact your respective course instructor(s)/Academic Divison.</span></td></tr></table>
+                                                                        <table><tr><td><span style='font-size:14px'><strong>5</span></td><td style='width:5px'></td><td><span style='font-size:14px'>All the actions after pressing the "submission" button are irreversible. You can not change the dates of leaving and returning to the campus. Be careful while submitting.</span></td></tr></table>
+                                                                        <table><tr><td><span style='font-size:14px'><strong>6</span></td><td style='width:5px'></td><td><span style='font-size:14px'>Download the PDF of the approved leave form on your mobile which you can show at the main gate.</span></td></tr></table>
+                                                                        <table><tr><td><span style='font-size:14px'><strong>7</span></td><td style='width:5px'></td><td><span style='font-size:14px'>In the reason box, please be specific about the purpose of leave for example going home for festival or going for examination. Personal reasons etc kind of arguments may lead to the rejection of the application.</span></td></tr></table>
+																</div>
+															</td>
+													</tr>
+
+                                                                <tr><td colspan="3" style="height:20px"></td></tr>       
+                                                                
+                                                                <tr>
+			                                                        <td colspan="3" >
+			                                                            <div align="center" style="margin-left:8px;margin-right:8px">
+			                                                                <span style="font-weight:bold;">
+                                                                        <input id="chk_agree" type="checkbox" name="chk_agree" onchange="toggleContinueButton()" />
+                                                                        <label for="chk_agree">I have read all the above mentioned instructions carefully.</label>
+                                                                    </span>
+                                                                </div>
+			                                                        </td>
+														</tr>
+
+                                                                <tr><td colspan="3" style="height:10px"></td></tr> 
+																
+			                                                        <tr>
+			                                                            <td colspan="3" style="height: 10px;">
+                                                                        <div align="center">
+                                                                            <input type="button" name="btn_submit" value="Continue" id="btn_submit" disabled="disabled" style="font-weight:bold;height:28px;width:120px;" onclick="handleSubmit()" />
+                                                                        </div>
+			                                                            </td>
+			                                                        </tr>
+
+                                                                <tr>
+			                                                        <td colspan="3" style="height: 20px;">
+			                                                        </td>
+		                                                        </tr>
+		                                                        </tbody>
+		                                                    </table>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+	                                <br /><br />
+	                                <div align="center">
+                                        <span style="font-size:18px;color:blue"><strong>For any query related to Leave Application, Please Contact to Student Welfare Division (SWD)</strong></span>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

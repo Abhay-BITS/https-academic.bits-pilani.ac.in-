@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><title>
+	AUGS-AGSR
+</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" rel="stylesheet">
+
+    <link type="text/css" href="../Styles/reset.css" rel="stylesheet" />
+    <link type="text/css" href="../Styles/module.css" rel="stylesheet" />
+    <link type="text/css" href="../Styles/main.css" rel="stylesheet" />
+
+    <script type="text/javascript" src="../Scripts/jquery-1.4.1.min.js"></script>
+    <script type="text/javascript" src="../Scripts/jquery.colorbox.js"></script>
+    <script type="text/javascript" src="../Scripts/main.js"></script>
+
+    <script type="text/javascript" src="../Scripts/datetimepicker.js"></script>
+    <script type="text/javascript" src="../Scripts/Calendar.js"></script>
+    <style>
+        li {
+            padding: 3px;
+        }
+    </style>
+</head>
+<body>
+    <form name="form1" method="post" action="./student-dashboard.html" id="form1">
+        <div class="headerWrapper">
+            <div class="headerWrapperFix">
+                <h1 class="hidden">BITS Pilani</h1>
+                <div class="logoWrapper">
+                    <a href="#" class="logo">
+                        <img src="../images/AUGSD.jpg" alt="AUGSD logo" />
+                        <img src="../images/AUGS-AGSR-Header.jpg" style="float: right" />
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="infoWrapper">
+            <div class="breadCrumbWrapper">
+                <ul class="breadCrumb">
+                    <li>
+                        <span id="lblName" style="color:#211D70;font-size:10pt;"><b>Welcome : </b>ABHAY KUMAR MADDHESHIYA | </span></li>
+                    <li>
+                        <span id="lblIP" style="color:#990000;font-size:10pt;">Login IP Address : 103.144.93.209</span></li>
+                </ul>
+                <div style="float: right;">
+                    <a href="Student_Profile/Update_Profile.aspx">
+                        <button type="button" class="btn btn-danger">My Profile</button>
+                    </a>
+                    <a href="student-logout.aspx">
+                        <button type="button" class="btn btn-danger">Logout</button></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="contentWrapper">
+            <div class="contentFix">
+                <div class="twoCol">
+                    <div class="row" style="padding: 10px;">
+                        <div class="col-sm-4">
+                            <div class="list-group">
+                                <a href="#" class="list-group-item active" style="font-weight: bold">Documents</a>
+                                <a href="../Downloads/Academic-Regulations-2023.pdf" class="list-group-item" target="_blank"><b>Academic Regulation</b></a>
+                                <a href="../Downloads/Bulletin_2024-25.pdf" class="list-group-item" target="_blank"><b>Bulletin</b></a>
+                                <a href="../Downloads/Dos_Donts_02_AUG_2022.pdf" class="list-group-item"><b>Do's and Don'ts in Examinations</b></a>
+                                <a href="#" class="list-group-item" data-toggle="modal" data-target="#FAQ"><b>FAQs</b></a>
+                                <a href="../Downloads/Unfair_Means_Offence_Revised_02_AUG_2022.pdf" class="list-group-item"><b>Guidelines for the Award of Punishment to Unfair Means Cases</b></a>
+                                <a href="#" class="list-group-item" data-toggle="modal" data-target="#myModal1"><b>Handouts (I Semester 2025-26)</b></a>
+                                <a href="#" class="list-group-item" data-toggle="modal" data-target="#myModal"><b>Time-Table (I Semester 2025-26)</b></a> 
+                                <a href="../Downloads/Instructions_Make-up_Application_21_Oct_2021.pdf" class="list-group-item" target="_blank" ><b>Instructions for Make-up Application</b></a>
+                                <a href="../Downloads/Instructions_For_Examination_Students_Revised_01_AUG_2022.pdf" class="list-group-item"><b>Instructions for Examination</b></a>
+                                <a href="../Downloads/Name_Change_Procedure/Revised _Proced_Name Change by BITS Students_22_Sep_2020.docx" class="list-group-item" target="_blank"><b>Name Change Procedure</b></a>
+                                <a href="../Downloads/Pre-requisite_Website_18-01-2025.pdf" class="list-group-item" target="_blank"><b>Pre-requisites of courses</b></a>
+                                <a href="../Downloads/Room_Booking_Manual_For_Students.pdf" class="list-group-item" target="_blank"><b>Room Booking Manual For Students</b></a>
+                                <a href="Download/Withdrawal_Manual_19_Oct_2020.pdf" class="list-group-item" target="_blank"><b>Withdrawal Manual: Steps for withdrawal</b></a>
+
+                                <!-- FAQ Model Window -->
+                                <div class="modal fade" id="FAQ" role="dialog">
+                                    <div class="modal-dialog">
+                                        <!-- Modal content-->
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                <h4 class="modal-title"><b>FAQs</b></h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p><a href="Download/FAQ/FAQs_ERP_Registration_24_July_2024.pdf" class="linkBullet" target="_blank">ERP & Registration</a></p><br />
+                                                <p><a href="Download/FAQ/FAQs_FDThesis.pdf" class="linkBullet">First Degree Thesis (FDTS)</a></p><br />
+                                                <p><a href="Download/FAQ/FAQs_Graduation_Requirement.pdf" class="linkBullet">Graduation Requirements</a></p><br />
+                                                <p><a href="Download/FAQ/FAQs_Project_Type_Courses.pdf" class="linkBullet">Project Type Courses</a></p><br />
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="myModal" role="dialog">
+                                    <div class="modal-dialog">
+                                        <!-- Modal content-->
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                <h4 class="modal-title"><b>Time-Table</b></h4>
+                                            </div>
+                                            <div class="modal-body">
+                                               <p><a href="../Downloads/Time-Table/Timetable_27_Sep_2025.pdf" class="linkBullet" target="_blank">First Semester 2025-26 (as on  27-Sep-2025)</a></p>
+                                                <br />
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                               
+                                <!-- Course Handouts -->
+                                <div class="modal fade" id="myModal1" role="dialog">
+                                    <div class="modal-dialog">
+                                        <!-- Modal content-->
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                <h4 class="modal-title"><b>Handouts</b></h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p><a href="../Downloads/Course-Handout/Course_Handout_Part_I_30_July_2025.pdf" class="linkBullet" target="_blank">Part I</a></p>
+                                                <br />
+                                             <p><a href="All_Courses_Handouts/Processing.aspx" class="linkBullet" target="_blank">Part II (link for all handouts)</a></p>
+                                                <br />
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="list-group">
+                                <a href="#" class="list-group-item active" style="font-weight: bold">Academic Services</a>
+                                <a href="DutyReport_Processing.aspx" id="aSeatingArrangement" class="list-group-item" target="_blank" style="font-weight:bold;">MID Semester Examination Seating Arrangement (I sem, 2025-26)</a>
+                                <a href="Makeup_Exam/Dashboard.aspx" target="_blank" class="list-group-item"><b>Application For Makeup Exam</b></a>
+                                <a href="Document_PreProcessing.aspx" target="_blank" class="list-group-item"><b>Academic Certificate / Request</b></a>
+                                <a href="Director_Feedback/Processing.aspx" target="_blank" class="list-group-item"><b><span style="color:blue">Course Feedback (24x7) for Director</span></b></a>
+                                <a href="Thesis_Dissertation/Processing.aspx" target="_blank" class="list-group-item"><b>First Degree Thesis / Higher Degree Dissertation</b></a>
+                                <a href="FD_Teaching_Assistantship/Processing.aspx" target="_blank" class="list-group-item"><b>First Degree Teaching Assistantship Application</b></a>
+                                <a href="Regular_Feedback/Processing.aspx" target="_blank" class="list-group-item"><b>Student's Feedback (24×7)</b></a>
+                                <a href="Document_PreProcessing.aspx" target="_blank" class="list-group-item"><b>Grade Sheet</b></a>
+                                <a href="#" class="list-group-item" data-toggle="modal" data-target="#Project_Type_Courses"><b>Project Type Courses</b></a>
+                                <a href="Document_PreProcessing.aspx" target="_blank" class="list-group-item"><b>Transcript</b></a>
+                            
+                                <!-- Modal -->
+                                <div class="modal fade" id="Project_Type_Courses" role="dialog">
+                                    <div class="modal-dialog">
+                                        <!-- Modal content-->
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                <h4 class="modal-title"><b>Project Type Courses</b></h4>
+                                            </div>
+                                            <div class="modal-body">
+                                              <p><a href="../Downloads/NOTICE_Project_Application_For_I_Sem_2025_26_04_April_2025.pdf"  class="linkBullet" target="_blank">Notice</a></p>
+                                                <br />
+                                                <p><a href="../Downloads/ERP_USER_MANUAL_Project_Type_Courses_Students_16_April_2022.pdf"  class="linkBullet" target="_blank">ERP User Manual</a></p>
+                                                <br />
+                                                <p><a href="https://erp.bits-pilani.ac.in/" class="linkBullet" target="_blank">Click here to approve online</a></p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4">
+                            <div class="list-group">
+                                <a href="#" class="list-group-item active" style="font-weight: bold">Notices</a>
+                                <a href="../Downloads/Academic_Calendar_AY_2025_2026_26_August_2025.pdf" target="_blank" class="list-group-item"><b>Academic Calendar (AY 2025 - 2026)</b></a>
+                                <a href="../ExamSchedule/ImpDoc/StudentNotice/ExamSeatingArrangment.pdf" id="aSeatingArrangmentFile" class="list-group-item" target="_blank" style="font-weight:bold;">MID Semester Examination Seating Arrangement (I sem, 2025-26), PDF</a>
+                                <a href="TimeTable_Change_Notices/Processing.aspx" class="list-group-item" target="_blank"><b>Time-Table Change Notice</b></a>
+                                <a href="Download/Notice_For_Students_Requests_On_Medical_Background_30_Sep_2025.pdf" target="_blank" class="list-group-item"><b>Notice for Students Requests on Medical Background</b></a>
+                            </div>
+
+                            <br />
+                            <div class="list-group">
+                               <a href="#" class="list-group-item active" style="font-weight: bold">Other Services</a>
+                               <a href="Class_Cancellation/Processing.aspx" target="_blank" class="list-group-item"><b>Class Cancellation / Change of Classroom</b></a>
+                               <a href="Student_TMS/Processing.aspx" target="_blank" class="list-group-item"><b>Query Submission</b></a>
+                               <div id="Div_Leave_Portal">
+                               <a href="SWD_Leave_PreProcessing.html" class="list-group-item"><b>Leave Application</b></a>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+<div class="footerWrapper">
+		
+	</div>
+	<div class="cpInfoFixWrapper">
+		<div class="cpInfoFix">
+		
+<p>&copy; <span id="footercontrol_lblDate">2025</span> AUGS-AGSR DIVISION, FD-II, BITS Pilani, Pilani Campus</p>
+        
+   
+             
+              
+		</div>		
+	</div>
+    </form>
+</body>
+</html>

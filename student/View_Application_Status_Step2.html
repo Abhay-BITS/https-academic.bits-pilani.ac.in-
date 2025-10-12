@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+
+<html>
+<head><title>
+	Leaves Status
+</title><link rel="shortcut icon" href="Images/favicon.ico" /><link rel="stylesheet" type="text/css" href="css/mystyle.css" /><link type="text/css" href="css/reset.css" rel="stylesheet" /><link type="text/css" href="css/module.css" rel="stylesheet" /><link type="text/css" href="css/main.css" rel="stylesheet" /><link type="text/css" href="css/jquery.autocomplete.css" rel="stylesheet" />
+    <script type="text/javascript" src="Scripts/jquery-1.4.1.min.js"></script>
+    <script type="text/javascript" src="Scripts/jquery.colorbox.js"></script>
+    <script type="text/javascript" src="Scripts/main.js"></script>
+    <script type="text/javascript" src="Scripts/jquery.min.js"></script>
+    <script type="text/javascript" src="Scripts/datetimepicker.js"></script>
+    <script type="text/javascript" src="Scripts/Disable_rightclick.js"></script>
+    <script type="text/javascript" src="Scripts/Footer.js"></script>
+    <script type="text/javascript" src="Scripts/Disable_BackButton.js"></script>
+    <script type="text/javascript" src="Scripts/jquery.autocomplete.js"></script>
+    <link type="text/css" href="Datepicker/datepicker_style.css" rel="stylesheet" />
+    <script type="text/javascript" src="Datepicker/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="Datepicker/jquery-ui.js"></script>
+    
+    
+
+    <script type="text/javascript">
+        var window_style = "width=900,height=1000,toolbar=0,menubar=0,location=0,status=yes,scrollbars=yes,resizable=yes,left=50,top=50";
+        function Popup_window(window_url) {
+            window.open(window_url, "", window_style);
+        }
+        
+        // Application data for different transaction IDs
+        var applicationData = {
+            'TXN001': {
+                // Student Details
+                idno: '2022B5A81066P',
+                name: 'ABHAY KUMAR MADDHESHIYA',
+                email: 'f20221066@pilani.bits-pilani.ac.in',
+                contact: '7007745038',
+                
+                // Hostel Details
+                hostel: 'Ram Bhawan',
+                roomNo: '3142',
+                wardenName: 'Prof. Murali Monohar Pandey',
+                wardenEmail: 'ram.warden@pilani.bits-pilani.ac.in',
+                
+                // Leave Details
+                departureDate: '13-Oct-2025',
+                returnDate: '27-Oct-2025',
+                leaveReason: 'Going home for diwali and midsems break',
+                appliedOn: '11-Oct-2025 02:30 PM',
+                
+                // Approval Status
+                approvalStatus: 'Approved',
+                approvalRemarks: '',
+                processedBy: 'Prof. Murali Monohar Pandey',
+                processedOn: '11-Oct-2025 05:15 PM',
+                
+                // Supporting Document
+                supportingDocument: 'Diwali_leave.pdf',
+                documentType: 'Supporting Document'
+            },
+            'TXN002': {
+                // Student Details
+                idno: '2022B5A81066P',
+                name: 'ABHAY KUMAR MADDHESHIYA',
+                email: 'f20221066@pilani.bits-pilani.ac.in',
+                contact: '7007745038',
+                
+                // Hostel Details
+                hostel: 'Ram Bhawan',
+                roomNo: '3142',
+                wardenName: 'Prof. Murali Monohar Pandey',
+                wardenEmail: 'ram.warden@pilani.bits-pilani.ac.in',
+                
+                // Leave Details
+                departureDate: '19-Sep-2025',
+                returnDate: '21-Sep-2025',
+                leaveReason: 'Going for monthly medical appointment',
+                appliedOn: '18-Sep-2025 01:55 PM',
+                
+                // Approval Status
+                approvalStatus: 'Approved',
+                approvalRemarks: 'Medical leave approved',
+                processedBy: 'Prof. Murali Monohar Pandey',
+                processedOn: '19-Sep-2025 05:03 PM',
+                
+                // Supporting Document
+                supportingDocument: 'Sr1.pdf',
+                documentType: 'Medical Certificate'
+            },
+            'TXN003': {
+                // Student Details
+                idno: '2022B5A81066P',
+                name: 'ABHAY KUMAR MADDHESHIYA',
+                email: 'f20221066@pilani.bits-pilani.ac.in',
+                contact: '7007745038',
+                
+                // Hostel Details
+                hostel: 'Ram Bhawan',
+                roomNo: '3142',
+                wardenName: 'Prof. Murali Monohar Pandey',
+                wardenEmail: 'ram.warden@pilani.bits-pilani.ac.in',
+                
+                // Leave Details
+                departureDate: '04-Aug-2025',
+                returnDate: '05-Aug-2025',
+                leaveReason: 'Jaipur doctor consultation',
+                appliedOn: '04-Aug-2025 10:30 AM',
+                
+                // Approval Status
+                approvalStatus: 'Not Approved',
+                approvalRemarks: 'Insufficient notice period provided',
+                processedBy: 'Prof. Murali Monohar Pandey',
+                processedOn: '04-Aug-2025 02:45 PM',
+                
+                // Supporting Document
+                supportingDocument: 'Jaipur_sr2.pdf',
+                documentType: 'Appointment Slip'
+            },
+            'b35fedcd-736a-4d22-bab9-b82c6005f711': {
+                // Student Details
+                idno: '2022B5A81066P',
+                name: 'ABHAY KUMAR MADDHESHIYA',
+                email: 'f20221066@pilani.bits-pilani.ac.in',
+                contact: '7007745038',
+                
+                // Hostel Details
+                hostel: 'Ram Bhawan',
+                roomNo: '3142',
+                wardenName: 'Prof. Murali Monohar Pandey',
+                wardenEmail: 'ram.warden@pilani.bits-pilani.ac.in',
+                
+                // Leave Details
+                departureDate: '19-Sep-2025',
+                returnDate: '21-Sep-2025',
+                leaveReason: 'Going for monthly medical appointment',
+                appliedOn: '18-Sep-2025 01:55 PM',
+                
+                // Approval Status
+                approvalStatus: 'Approved',
+                approvalRemarks: 'Medical leave approved',
+                processedBy: 'Prof. Murali Monohar Pandey',
+                processedOn: '19-Sep-2025 05:03 PM',
+                
+                // Supporting Document
+                supportingDocument: 'Sr1.pdf',
+                documentType: 'Medical Certificate'
+            },
+            '8fc23689-b9ef-4e03-b8a5-6d55719fa0b6': {
+                // Student Details
+                idno: '2022B5A81066P',
+                name: 'ABHAY KUMAR MADDHESHIYA',
+                email: 'f20221066@pilani.bits-pilani.ac.in',
+                contact: '7007745038',
+                
+                // Hostel Details
+                hostel: 'Ram Bhawan',
+                roomNo: '3142',
+                wardenName: 'Prof. Murali Monohar Pandey',
+                wardenEmail: 'ram.warden@pilani.bits-pilani.ac.in',
+                
+                // Leave Details
+                departureDate: '04-Aug-2025',
+                returnDate: '05-Aug-2025',
+                leaveReason: 'Jaipur doctor consultation',
+                appliedOn: '04-Aug-2025 10:30 AM',
+                
+                // Approval Status
+                approvalStatus: 'Not Approved',
+                approvalRemarks: 'Insufficient notice period provided',
+                processedBy: 'Prof. Murali Monohar Pandey',
+                processedOn: '04-Aug-2025 02:45 PM',
+                
+                // Supporting Document
+                supportingDocument: 'Jaipur_sr2.pdf',
+                documentType: 'Appointment Slip'
+            },
+            '2979367d-2b3c-4b0c-bbd8-5cf9fb2c2cb7': {
+                // Student Details
+                idno: '2022B5A81066P',
+                name: 'ABHAY KUMAR MADDHESHIYA',
+                email: 'f20221066@pilani.bits-pilani.ac.in',
+                contact: '7007745038',
+                
+                // Hostel Details
+                hostel: 'Ram Bhawan',
+                roomNo: '3142',
+                wardenName: 'Prof. Murali Monohar Pandey',
+                wardenEmail: 'ram.warden@pilani.bits-pilani.ac.in',
+                
+                // Leave Details
+                departureDate: '13-Oct-2025',
+                returnDate: '27-Oct-2025',
+                leaveReason: 'Going home for diwali and midsems break',
+                appliedOn: '11-Oct-2025 02:30 PM',
+                
+                // Approval Status
+                approvalStatus: 'Approved',
+                approvalRemarks: ' ',
+                processedBy: 'Prof. Murali Monohar Pandey',
+                processedOn: '11-Oct-2025 05:15 PM',
+                
+                // Supporting Document
+                supportingDocument: 'Diwali_leave.pdf',
+                documentType: 'Leave Application Form'
+            }
+        };
+        
+        // Function to get URL parameter
+        function getUrlParameter(name) {
+            name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+            var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+            var results = regex.exec(location.search);
+            return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+        }
+        
+        // Function to load application data based on TXNID
+        function loadApplicationData() {
+            var txnId = getUrlParameter('TXNID');
+            var data = applicationData[txnId];
+            
+            if (data) {
+                // Update Student Details
+                document.getElementById('ctl00_ContentPlaceHolder1_lbl_student_idno').textContent = data.idno;
+                document.getElementById('ctl00_ContentPlaceHolder1_lbl_student_name').textContent = data.name;
+                document.getElementById('ctl00_ContentPlaceHolder1_lbl_student_email_id').textContent = data.email;
+                document.getElementById('ctl00_ContentPlaceHolder1_lbl_student_contact_no').textContent = data.contact;
+                
+                // Update Hostel Details
+                document.getElementById('ctl00_ContentPlaceHolder1_lbl_hostel_name').textContent = data.hostel;
+                document.getElementById('ctl00_ContentPlaceHolder1_lbl_room_no').textContent = data.roomNo;
+                document.getElementById('ctl00_ContentPlaceHolder1_lbl_warden_name').textContent = data.wardenName;
+                document.getElementById('ctl00_ContentPlaceHolder1_lbl_warden_email_id').textContent = data.wardenEmail;
+                
+                // Update Leave Details
+                document.getElementById('ctl00_ContentPlaceHolder1_lbl_departure_date').textContent = data.departureDate;
+                document.getElementById('ctl00_ContentPlaceHolder1_lbl_return_date').textContent = data.returnDate;
+                document.getElementById('ctl00_ContentPlaceHolder1_lbl_leave_reason').textContent = data.leaveReason;
+                document.getElementById('ctl00_ContentPlaceHolder1_lbl_leaves_applied_on').textContent = data.appliedOn;
+                
+                // Update Approval Status
+                var statusElement = document.getElementById('ctl00_ContentPlaceHolder1_lbl_approval_status');
+                if (statusElement) {
+                    statusElement.textContent = data.approvalStatus;
+                    statusElement.style.color = data.approvalStatus === 'Approved' ? 'DarkGreen' : 'Red';
+                }
+                
+                var remarksElement = document.getElementById('ctl00_ContentPlaceHolder1_lbl_approval_remarks');
+                if (remarksElement) {
+                    remarksElement.textContent = data.approvalRemarks;
+                }
+                
+                var processedByElement = document.getElementById('ctl00_ContentPlaceHolder1_lbl_processed_by');
+                if (processedByElement) {
+                    processedByElement.textContent = data.processedBy;
+                }
+                
+                var processedOnElement = document.getElementById('ctl00_ContentPlaceHolder1_lbl_processed_on');
+                if (processedOnElement) {
+                    processedOnElement.textContent = data.processedOn;
+                }
+                
+                // Update Supporting Document link
+                var supportingDocLink = document.querySelector('a[href="javascript:viewSupportingDocument()"]');
+                if (supportingDocLink && data.supportingDocument) {
+                    supportingDocLink.style.display = 'inline';
+                    supportingDocLink.innerHTML = '<strong>View Supporting Document</strong>';
+                } else if (supportingDocLink) {
+                    supportingDocLink.style.display = 'none';
+                }
+            }
+        }
+        
+        // Function to view supporting document
+        function viewSupportingDocument() {
+            var txnId = getUrlParameter('TXNID');
+            var data = applicationData[txnId];
+            
+            if (data && data.supportingDocument) {
+                // Map transaction IDs to their corresponding PDF files
+                var pdfFiles = {
+                    'TXN001': 'Diwali_leave.pdf',
+                    'TXN002': 'Sr1.pdf',
+                    'TXN003': 'Jaipur_sr2.pdf',
+                    'b35fedcd-736a-4d22-bab9-b82c6005f711': 'Sr1.pdf',
+                    '8fc23689-b9ef-4e03-b8a5-6d55719fa0b6': 'Jaipur_sr2.pdf',
+                    '2979367d-2b3c-4b0c-bbd8-5cf9fb2c2cb7': 'Diwali_leave.pdf'
+                };
+                
+                var pdfFile = pdfFiles[txnId] || data.supportingDocument;
+                if (pdfFile) {
+                    // Open the PDF file directly
+                    var url = 'http://localhost:8000/student/' + pdfFile;
+                    window.open(url, '_blank');
+                } else {
+                    alert('PDF file not found for this application.');
+                }
+            } else {
+                alert('No supporting document available for this application.');
+            }
+        }
+        
+        // Load data when page loads
+        window.onload = function() {
+            loadApplicationData();
+        };
+    </script>
+  
+</head>
+<body>
+    <form name="aspnetForm" method="post" action="./View_Application_Status_Step2.aspx" id="aspnetForm" autocomplete="off">
+<div>
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTE0NzIxNDMyNg9kFgJmD2QWAgIDD2QWBgIBDw8WAh4EVGV4dAUXQUJIQVkgS1VNQVIgTUFEREhFU0hJWUFkZAIDDw8WAh8ABRhTdW5kYXksIE9jdG9iZXIgMTIsIDIwMjVkZAIHD2QWHgICDw8WAh8ABQ0yMDIyQjVBODEwNjZQZGQCBA8PFgIfAAUXQUJIQVkgS1VNQVIgTUFEREhFU0hJWUFkZAIGDw8WAh8ABSJmMjAyMjEwNjZAcGlsYW5pLmJpdHMtcGlsYW5pLmFjLmluZGQCCA8PFgIfAAUKNzAwNzc0NTAzOGRkAgoPDxYCHwAFClJhbSBCaGF3YW5kZAIMDw8WAh8ABQQzMTQyZGQCDg8PFgIfAAUbUHJvZi4gTXVyYWxpIE1vbm9oYXIgUGFuZGV5ZGQCEA8PFgIfAAUjcmFtLndhcmRlbkBwaWxhbmkuYml0cy1waWxhbmkuYWMuaW5kZAISDw8WAh8ABQsxOS1TZXAtMjAyNWRkAhQPDxYCHwAFCzIxLVNlcC0yMDI1ZGQCFg8PFgIfAAUlR29pbmcgZm9yIG1vbnRobHkgbWVkaWNhbCBhcHBvaW50bWVudGRkAhgPDxYCHwAFFDE4LVNlcC0yMDI1IDAxOjU1IFBNZGQCGg8WAh4HVmlzaWJsZWdkAhwPDxYGHwAFCEFwcHJvdmVkHglGb3JlQ29sb3IKNR4EXyFTQgIEZGQCHg8WAh8BZxYGAgEPDxYCHwBlZGQCAw8PFgIfAAUbUHJvZi4gTXVyYWxpIE1vbm9oYXIgUGFuZGV5ZGQCBQ8PFgIfAAUUMTktU2VwLTIwMjUgMDU6MDMgUE1kZGQ7YMaTD9DzQxcmcvbv2nTBosL3XOCTfjJNs/bUHmarHA==" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/SWD/WebResource.axd?d=GBBuVrW5xdRYS744QyoWI5LpRELhlBmGmKc-22BldANXoOjBb7kg0d_uUx3z5j2JSyEguMIUNUvee_74Skc2NZWYel0NIXplvkTavZPU_m01&amp;t=638628405619783110" type="text/javascript"></script>
+
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="BF3FCDA6" />
+	<input type="hidden" name="__SCROLLPOSITIONX" id="__SCROLLPOSITIONX" value="0" />
+	<input type="hidden" name="__SCROLLPOSITIONY" id="__SCROLLPOSITIONY" value="0" />
+	<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+	<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+</div>
+    <div id="main" align="center">
+        <table id="t1" border="0" cellpadding="0" cellspacing="0" width="100% "
+            bgcolor="White">
+            <tr>
+                <td>
+                    <div id="Div1" align="left">
+                        <div class="headerWrapper">
+                            <div class="headerWrapperFix">
+                                <h1 class="hidden">
+                                    BITS Pilani</h1>
+                                <div class="logoWrapper">
+                                     <a href="#" class="logo" target="_blank">
+                                         <img src="Images/BITS_Pilani_campus_logo.gif" alt="BITS Logo" />
+                                     </a>
+                                </div>
+                                 
+                              <ul class="mainNav">
+                                 <li><a href="Instructions.html">Apply For Leaves</a></li>
+                                 <li><a href="Downloads/Parent's_Consent_Form.pdf" target="_blank">Download Parent's Consent Form</a></li>
+                                 <li><a href="View_Application_Status_Step1.html">Leaves Status</a></li>
+                            </ul>  
+                           
+                
+                               <ul class="siteInfo" style="right: 110px; width: 380px; top: 8px; height: 50px">
+                                    <li style="width: 435px">
+                                        <p class="siteLog" style="text-align: center">
+                                            <br />
+                                            <span style="font-size: 0.9em"><span style="font-size: 1.1em">Student Welfare Division (SWD)</span> </span>
+                                        </p>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+           <tr>
+                           
+                            <td  class="body_txt_in" style="height: 30px">
+                            <table id="UserInfo" style="width: 100%">
+                            <tbody>
+                            <tr>
+                            <td width="70%" align="left"style="margin-left:45px "><div> <span style="color:#211d70" ><strong><span style="color:#211d70">&nbsp;&nbsp;&nbsp;&nbsp;W</span>elcome</strong>,</span>
+                              <span id="ctl00_Name" style="display:inline-block;color:#211D70;font-weight:bold;width:469px;">ABHAY KUMAR MADDHESHIYA</span></div>
+                            
+                            
+                            </td>
+                             <td width="30%"> 
+                                    <table id="table_logout_details" width="100%">
+                                        <tbody>
+                                            <tr>
+                                                
+                                                <td>
+                                                   <div id="div_logout" align="right" style="margin-right:20px">
+                                                     <span id="ctl00_lbl_current_date" style="color:#211D70;font-weight:bold;">Sunday, October 12, 2025</span>&nbsp;
+                                                       <span id="ctl00_lbl_spacer" style="color:#211D70;font-weight:bold;">|</span>&nbsp;
+                                                  
+                                                   <a class="footer" href="Logout.aspx"><strong><span style="font-size: 8pt">[Logout]</span></strong></a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                            </td>
+                            </tr>
+                            </tbody>
+                            
+                            </table>
+                          
+                              
+                                </td>
+             
+</tr>  
+            <tr>
+                <td>
+                    <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="height: 300px">
+                        <tr>
+                            <td id="contentpane" style="width: 100%; vertical-align: top">
+                                <div align="center">
+                                    
+    <script type="text/javascript">
+        function demoFromHTML() {
+            var pdf = new jsPDF('p', 'pt', 'letter');
+            // source can be HTML-formatted string, or a reference
+            // to an actual DOM element from which the text will be scraped.
+            source = $('#Div_Export_To_PDF')[0];
+           
+
+            // we support special element handlers. Register them with jQuery-style
+            // ID selector for either ID or node name. ("#iAmID", "div", "span" etc.)
+            // There is no support for any other type of selectors
+            // (class, of compound) at this time.
+            specialElementHandlers = {
+                // element with id of "bypass" - jQuery style selector
+                '#Div_Export_To_PDF': function (element, renderer) {
+                    // true = "handled elsewhere, bypass text extraction"
+                    return true
+                }
+            };
+            margins = {
+                top: 80,
+                bottom: 60,
+                left: 40,
+                width: 522
+            };
+            // all coords and widths are in jsPDF instance's declared units
+            // 'inches' in this case
+            pdf.fromHTML(
+                source, // HTML string or DOM elem ref.
+                margins.left, // x coord
+                margins.top, {// y coord
+                'width': margins.width, // max width of content on PDF
+                'elementHandlers': specialElementHandlers
+            },
+                function (dispose) {
+                    // dispose: object with X, Y of the last line add to the PDF
+                    //          this allow the insertion of new lines after html
+                    pdf.save('Test.pdf');
+                }
+                , margins);
+        }
+    </script>
+
+
+
+
+ <div align="center">
+<table border="0" id="table_attendance_details" cellpadding="0" width="950px" cellspacing="0" >
+    <tbody>
+		<tr valign="top">
+			<td class="head_already" style="height: 30px"> <div style="text-align: center">
+			 <span>Leaves Status</span></div>
+			 </td>
+		</tr>
+
+
+	</tbody>
+	</table><br />
+
+      <table width="950px">
+    <tr>
+        <td>
+            <div align="right" style="margin-right:10px">
+             <a href="View_Application_Status_Step1.aspx"><img alt="" src="Images/GoBack1.png" height="36px" width="125px"></img></a>
+            </div>
+        </td>
+    </tr>
+</table>
+    <br />
+
+    
+
+     <div id="Div_Export_To_PDF">
+
+	  <table border="0" class="body_txt_in" cellpadding="0" cellspacing="0" style="width: 950px; height: 55px; border: 1px solid #4a9ace">
+                <tbody>
+
+                    
+                    <tr>
+			            <td colspan="3" style="background-color: #4a9ace; height: 22px;">
+			            <div class="boxHead">    
+			            <div class="heading">Student Details</div>
+			            </div>
+			            </td>
+		        </tr>
+		        
+		        <tr>
+		            <td colspan="3" style=" height: 15px;" align="center">
+		            </td>
+		        </tr>
+		        
+		     <tr>
+		            <td>
+		                <table border="0"  class="body_txt_in" cellpadding="0" cellspacing="0" width="100%">
+		                <tbody>
+                                    
+                                  
+                                    <tr>
+                                        <td style="height: 30px; width: 168px; text-align:left;">&nbsp;&nbsp;<strong>IDNO</strong></td>
+                                        <td style="height: 30px; width: 19px; text-align:left;">&nbsp;&nbsp;<strong>:</strong></td>
+                                        <td align="left"style="height: 30px; width: 500px;">&nbsp;&nbsp; 
+                                        <span id="ctl00_ContentPlaceHolder1_lbl_student_idno" style="color:DarkRed;font-weight:bold;">2022B5A81066P</span>
+                                        </td>
+                                    </tr>
+
+                                    <tr><td colspan="3" style="height:10px"></td></tr>
+
+                                    <tr>
+                                        <td style="height: 30px; width: 168px; text-align:left;">&nbsp;&nbsp;<strong>Name</strong></td>
+                                        <td style="height: 30px; width: 19px; text-align:left;">&nbsp;&nbsp;<strong>:</strong></td>
+                                        <td align="left"style="height: 30px; width: 500px;">&nbsp;&nbsp; 
+                                        <span id="ctl00_ContentPlaceHolder1_lbl_student_name" style="color:DarkRed;font-weight:bold;">ABHAY KUMAR MADDHESHIYA</span>
+                                        </td>
+                                    </tr>
+
+                                    <tr><td colspan="3" style="height:10px"></td></tr>
+
+                                    <tr>
+                                        <td style="height: 30px; width: 168px; text-align:left;">&nbsp;&nbsp;<strong>BITS Email ID</strong></td>
+                                        <td style="height: 30px; width: 19px; text-align:left;">&nbsp;&nbsp;<strong>:</strong></td>
+                                        <td align="left"style="height: 30px; width: 500px;">&nbsp;&nbsp; 
+                                        <span id="ctl00_ContentPlaceHolder1_lbl_student_email_id">f20221066@pilani.bits-pilani.ac.in</span>
+                                        </td>
+                                    </tr>
+
+                                     <tr><td colspan="3" style="height:10px"></td></tr>
+
+                                    <tr>
+                                        <td style="height: 30px; width: 168px; text-align:left;">&nbsp;&nbsp;<strong>Contact No.</strong></td>
+                                        <td style="height: 30px; width: 19px; text-align:left;">&nbsp;&nbsp;<strong>:</strong></td>
+                                        <td align="left"style="height: 30px; width: 500px;">&nbsp;&nbsp; 
+                                         <span id="ctl00_ContentPlaceHolder1_lbl_student_contact_no">7007745038</span>
+                                        </td>
+                                    </tr>
+
+                                     <tr><td colspan="3" style="height:10px"></td></tr>
+		                </tbody>
+                            </table>
+		          </td>
+		           </tr>
+
+
+                     <tr>
+		            <td colspan="3" style="background-color: #4a9ace; height: 22px;">
+		            <div class="boxHead">    
+		            <div class="heading">Hostel Details</div>
+		            </div>
+		            </td>
+		        </tr>
+		        
+		        <tr>
+		            <td colspan="3" style=" height: 15px;" align="center">
+		            </td>
+		        </tr>
+
+
+                     <tr>
+		            <td>
+		                <table border="0"  class="body_txt_in" cellpadding="0" cellspacing="0" width="100%">
+		                <tbody>
+                                    
+                                  
+                                     <tr>
+                                        <td style="height: 30px; width: 168px; text-align:left;">&nbsp;&nbsp;<strong>Hostel</strong></td>
+                                        <td style="height: 30px; width: 19px; text-align:left;">&nbsp;&nbsp;<strong>:</strong></td>
+                                        <td align="left"style="height: 30px; width: 500px;">&nbsp;&nbsp; 
+                                        <span id="ctl00_ContentPlaceHolder1_lbl_hostel_name" style="color:DarkRed;font-weight:bold;">Ram Bhawan</span>
+                                        </td>
+                                    </tr>
+                               
+                                 <tr><td colspan="3" style="height:10px"></td></tr>
+
+                                    <tr>
+                                        <td style="height: 30px; width: 168px; text-align:left;">&nbsp;&nbsp;<strong>Room No.</strong></td>
+                                        <td style="height: 30px; width: 19px; text-align:left;">&nbsp;&nbsp;<strong>:</strong></td>
+                                        <td align="left"style="height: 30px; width: 500px;">&nbsp;&nbsp; 
+                                        <span id="ctl00_ContentPlaceHolder1_lbl_room_no" style="color:DarkRed;font-weight:bold;">3142</span>
+                                        </td>
+                                    </tr>
+
+                                 <tr><td colspan="3" style="height:10px"></td></tr>
+
+                                    <tr>
+                                        <td style="height: 30px; width: 168px; text-align:left;">&nbsp;<strong> Warden Name</strong></td>
+                                        <td style="height: 30px; width: 19px; text-align:left;">&nbsp;&nbsp;<strong>:</strong></td>
+                                        <td align="left"style="height: 30px; width: 500px;">&nbsp;&nbsp; 
+                                        <span id="ctl00_ContentPlaceHolder1_lbl_warden_name" style="color:DarkRed;font-weight:bold;">Prof. Murali Monohar Pandey</span>
+                                        </td>
+                                    </tr>
+
+                                <tr><td colspan="3" style="height:10px"></td></tr>
+
+                                    <tr>
+                                        <td style="height: 30px; width: 168px; text-align:left;">&nbsp;&nbsp;<strong>Warden Email Id</strong></td>
+                                        <td style="height: 30px; width: 19px; text-align:left;">&nbsp;&nbsp;<strong>:</strong></td>
+                                        <td align="left"style="height: 30px; width: 500px;">&nbsp;&nbsp; 
+                                        <span id="ctl00_ContentPlaceHolder1_lbl_warden_email_id">ram.warden@pilani.bits-pilani.ac.in</span>
+                                        </td>
+                                    </tr>
+                              
+
+                            
+
+                                 <tr><td colspan="3" style="height:10px"></td></tr>
+ 
+		                   </tbody>
+                               </table>
+                         </td>
+		           </tr>
+
+                             <tr>
+		                    <td colspan="3" style="background-color: #4a9ace; height: 22px;">
+		                    <div class="boxHead">    
+		                    <div class="heading">Leave Details</div>
+		                    </div>
+		                    </td>
+		                </tr>
+		        
+		                <tr>
+		                    <td colspan="3" style=" height: 15px;" align="center">
+		                    </td>
+		                </tr>
+
+
+
+
+                                 <tr>
+		                        <td>
+		                            <table border="0"  class="body_txt_in" cellpadding="0" cellspacing="0" width="100%">
+		                            <tbody>
+
+               
+                                             <tr>
+                                                <td style="height: 30px; width: 168px; text-align:left;">&nbsp;&nbsp;<strong>Departure Date</strong></td>
+                                                <td style="height: 30px; width: 19px; text-align:left;">&nbsp;&nbsp;<strong>:</strong></td>
+                                                <td align="left"style="height: 30px; width: 500px;">&nbsp;&nbsp;
+                                                <span id="ctl00_ContentPlaceHolder1_lbl_departure_date" style="color:DarkRed;font-weight:bold;">13-Oct-2025</span>
+                                                </td>
+                                            </tr>
+
+                                           <tr><td colspan="3" style="height:10px"></td></tr>
+
+                                            <tr>
+                                                <td style="height: 30px; width: 168px; text-align:left;">&nbsp;&nbsp;<strong>Return Date</strong></td>
+                                                <td style="height: 30px; width: 19px; text-align:left;">&nbsp;&nbsp;<strong>:</strong></td>
+                                                <td align="left"style="height: 30px; width: 500px;">&nbsp;&nbsp;
+                                                <span id="ctl00_ContentPlaceHolder1_lbl_return_date" style="color:DarkRed;font-weight:bold;">15-Oct-2025</span>
+                                                </td>
+                                            </tr>
+
+                                          <tr><td colspan="3" style="height:10px"></td></tr>
+
+                                         <tr>
+                                            <td style="height: 30px; width: 168px; text-align:left;">&nbsp;&nbsp;<strong>Leave Reason</strong></td>
+                                            <td style="height: 30px; width: 19px; text-align:left;">&nbsp;&nbsp;<strong>:</strong></td>
+                                            <td align="left"style="height: 30px; width: 500px;">&nbsp;&nbsp; 
+                                            <span id="ctl00_ContentPlaceHolder1_lbl_leave_reason">Going for monthly medical appointment</span>
+                                            </td>
+                                        </tr>
+
+                                         <tr><td colspan="3" style="height:10px"></td></tr>
+
+                                        <tr>
+                                            <td style="height: 30px; width: 168px; text-align:left;">&nbsp;&nbsp;<strong>Leaves Applied On</strong></td>
+                                            <td style="height: 30px; width: 19px; text-align:left;">&nbsp;&nbsp;<strong>:</strong></td>
+                                            <td align="left"style="height: 30px; width: 500px;">&nbsp;&nbsp; 
+                                            <span id="ctl00_ContentPlaceHolder1_lbl_leaves_applied_on">12-Oct-2025 01:55 PM</span>
+                                            </td>
+                                        </tr>
+
+                                     
+                                    <div id="ctl00_ContentPlaceHolder1_div_supporting_document">
+                                    <tr><td colspan="3" style="height:10px"></td></tr>
+
+                                    <tr>
+                                        <td style="height: 30px; width: 168px; text-align:left;">&nbsp;&nbsp;<strong>Supporting Document</strong></td>
+                                        <td style="height: 30px; width: 19px; text-align:left;">&nbsp;&nbsp;<strong>:</strong></td>
+                                        <td align="left"style="height: 30px; width: 500px;">&nbsp;&nbsp;
+                                         <a href="javascript:viewSupportingDocument()"><b>View Supporting Document</b></a>
+                                        </td>
+                                    </tr>
+                                    </div>
+
+
+
+                                 <tr><td colspan="3" style="height:20px"></td></tr>
+		                </tbody>
+                            </table>
+		          </td>
+		           </tr>
+
+
+                         <tr>
+		                    <td colspan="3" style="background-color: #4a9ace; height: 22px;">
+		                    <div class="boxHead">    
+		                    <div class="heading">Approval Status</div>
+		                    </div>
+		                    </td>
+		                </tr>
+		        
+		                <tr>
+		                    <td colspan="3" style=" height: 15px;" align="center">
+		                    </td>
+		                </tr>
+
+
+
+
+                                 <tr>
+		                        <td>
+		                            <table border="0"  class="body_txt_in" cellpadding="0" cellspacing="0" width="100%">
+		                            <tbody>
+
+               
+                                             <tr>
+                                                <td style="height: 30px; width: 168px; text-align:left;">&nbsp;&nbsp;<strong>Approval Status</strong></td>
+                                                <td style="height: 30px; width: 19px; text-align:left;">&nbsp;&nbsp;<strong>:</strong></td>
+                                                <td align="left"style="height: 30px; width: 500px;">&nbsp;&nbsp;
+                                                <span id="ctl00_ContentPlaceHolder1_lbl_leave_approval_status" style="color:DarkGreen;font-weight:bold;">Approved</span>
+                                                </td>
+                                            </tr>
+
+                                            <div id="ctl00_ContentPlaceHolder1_div_approval_details">
+                                           <tr><td colspan="3" style="height:10px"></td></tr>
+
+                                            <tr>
+                                                <td style="height: 30px; width: 168px; text-align:left;">&nbsp;&nbsp;<strong>Approval Remarks</strong></td>
+                                                <td style="height: 30px; width: 19px; text-align:left;">&nbsp;&nbsp;<strong>:</strong></td>
+                                                <td align="left"style="height: 30px; width: 500px;">&nbsp;&nbsp;
+                                                <span id="ctl00_ContentPlaceHolder1_lbl_approval_remarks"></span>
+                                                </td>
+                                            </tr>
+
+                                          <tr><td colspan="3" style="height:10px"></td></tr>
+
+                                         <tr>
+                                            <td style="height: 30px; width: 168px; text-align:left;">&nbsp;&nbsp;<strong>Processed By</strong></td>
+                                            <td style="height: 30px; width: 19px; text-align:left;">&nbsp;&nbsp;<strong>:</strong></td>
+                                            <td align="left"style="height: 30px; width: 500px;">&nbsp;&nbsp; 
+                                            <span id="ctl00_ContentPlaceHolder1_lbl_approved_by">Prof. Murali Monohar Pandey</span>
+                                            </td>
+                                        </tr>
+
+                                         <tr><td colspan="3" style="height:10px"></td></tr>
+
+                                        <tr>
+                                            <td style="height: 30px; width: 168px; text-align:left;">&nbsp;&nbsp;<strong>Processed On</strong></td>
+                                            <td style="height: 30px; width: 19px; text-align:left;">&nbsp;&nbsp;<strong>:</strong></td>
+                                            <td align="left"style="height: 30px; width: 500px;">&nbsp;&nbsp; 
+                                            <span id="ctl00_ContentPlaceHolder1_lbl_approved_on">12-Sep-2025 01:10 PM</span>
+                                            </td>
+                                        </tr>
+                                        </div>
+
+                                        <tr><td colspan="3" style="height:20px"></td></tr>
+		                </tbody>
+                            </table>
+		          </td>
+		           </tr>
+
+		           </tbody>
+                       </table>
+        </div>
+
+	</div>
+    <br /><br /><br />
+
+
+
+
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                  
+                </td>
+            </tr>
+        </table>
+    </div>
+       
+    
+
+<script type="text/javascript">
+//<![CDATA[
+
+theForm.oldSubmit = theForm.submit;
+theForm.submit = WebForm_SaveScrollPositionSubmit;
+
+theForm.oldOnSubmit = theForm.onsubmit;
+theForm.onsubmit = WebForm_SaveScrollPositionOnSubmit;
+//]]>
+</script>
+</form>
+</body>
+</html>   </div>
+       
+    
+
+<script type="text/javascript">
+//<![CDATA[
+
+theForm.oldSubmit = theForm.submit;
+theForm.submit = WebForm_SaveScrollPositionSubmit;
+
+theForm.oldOnSubmit = theForm.onsubmit;
+theForm.onsubmit = WebForm_SaveScrollPositionOnSubmit;
+//]]>
+</script>
+</form>
+</body>
+</html>

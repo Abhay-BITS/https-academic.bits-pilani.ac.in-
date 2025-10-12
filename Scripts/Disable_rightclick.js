@@ -1,0 +1,1 @@
+No Content: https://academic.bits-pilani.ac.in/Scripts/Disable_rightclick.js
