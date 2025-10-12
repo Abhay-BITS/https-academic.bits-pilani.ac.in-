@@ -1465,7 +1465,7 @@ input[type="submit"], input[type="button"], .btnurl {
     border-style: none;
     border-color: inherit;
     border-width: 0;
-    background: #4fa0f2 url('../../Images/btn_img.gif') repeat-x;
+    background: #4fa0f2 url('../../images/btn_img.gif') repeat-x;
     color: #fff;
     cursor: pointer;
     font-size: 12px;
@@ -1478,7 +1478,7 @@ input[type="submit"], input[type="button"], .btnurl {
 }
 
 .btnurl {
-    background: #4fa0f2 url(../../Images/btn_img.gif) repeat-x;
+    background: #4fa0f2 url(../../images/btn_img.gif) repeat-x;
     color: #fff !important;
     text-transform: uppercase;
     border: 0;
@@ -1488,7 +1488,7 @@ input[type="submit"], input[type="button"], .btnurl {
 
 
 .btnhelp {
-    background: url(../../Images/help.png) right top no-repeat !important;
+    background: url(../../images/help.png) right top no-repeat !important;
     text-align: left !important;
     width: 30px;
     height: 25px;
@@ -1496,7 +1496,7 @@ input[type="submit"], input[type="button"], .btnurl {
 }
 
 .btnAttention {
-    background: url(../../Images/Attention.png) right top no-repeat !important;
+    background: url(../../images/Attention.png) right top no-repeat !important;
     text-align: left !important;
     width: 30px;
     height: 25px;

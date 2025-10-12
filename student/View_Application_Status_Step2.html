@@ -3,7 +3,7 @@
 <html>
 <head><title>
 	Leaves Status
-</title><link rel="shortcut icon" href="Images/favicon.ico" /><link rel="stylesheet" type="text/css" href="css/mystyle.css" /><link type="text/css" href="css/reset.css" rel="stylesheet" /><link type="text/css" href="css/module.css" rel="stylesheet" /><link type="text/css" href="css/main.css" rel="stylesheet" /><link type="text/css" href="css/jquery.autocomplete.css" rel="stylesheet" />
+</title><link rel="shortcut icon" href="images/favicon.ico" /><link rel="stylesheet" type="text/css" href="css/mystyle.css" /><link type="text/css" href="css/reset.css" rel="stylesheet" /><link type="text/css" href="css/module.css" rel="stylesheet" /><link type="text/css" href="css/main.css" rel="stylesheet" /><link type="text/css" href="css/jquery.autocomplete.css" rel="stylesheet" />
     <script type="text/javascript" src="Scripts/jquery-1.4.1.min.js"></script>
     <script type="text/javascript" src="Scripts/jquery.colorbox.js"></script>
     <script type="text/javascript" src="Scripts/main.js"></script>
@@ -287,7 +287,7 @@
                 var pdfFile = pdfFiles[txnId] || data.supportingDocument;
                 if (pdfFile) {
                     // Open the PDF file directly
-                    var url = 'http://localhost:8000/student/' + pdfFile;
+                    var url = 'student/' + pdfFile;
                     window.open(url, '_blank');
                 } else {
                     alert('PDF file not found for this application.');
@@ -349,7 +349,7 @@ function __doPostBack(eventTarget, eventArgument) {
                                     BITS Pilani</h1>
                                 <div class="logoWrapper">
                                      <a href="#" class="logo" target="_blank">
-                                         <img src="Images/BITS_Pilani_campus_logo.gif" alt="BITS Logo" />
+                                         <img src="images/BITS_Pilani_campus_logo.gif" alt="BITS Logo" />
                                      </a>
                                 </div>
                                  
@@ -481,7 +481,7 @@ function __doPostBack(eventTarget, eventArgument) {
     <tr>
         <td>
             <div align="right" style="margin-right:10px">
-             <a href="View_Application_Status_Step1.aspx"><img alt="" src="Images/GoBack1.png" height="36px" width="125px"></img></a>
+             <a href="View_Application_Status_Step1.aspx"><img alt="" src="images/GoBack1.png" height="36px" width="125px"></img></a>
             </div>
         </td>
     </tr>
