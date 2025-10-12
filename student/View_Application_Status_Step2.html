@@ -287,7 +287,7 @@
                 var pdfFile = pdfFiles[txnId] || data.supportingDocument;
                 if (pdfFile) {
                     // Open the PDF file directly
-                    var url = 'student/' + pdfFile;
+                    var url = pdfFile;
                     window.open(url, '_blank');
                 } else {
                     alert('PDF file not found for this application.');
