@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
 <html>
+
 <head>
     <title>Leaves Status</title>
     <link rel="shortcut icon" href="images/favicon.ico" />
@@ -21,25 +22,25 @@
     <link type="text/css" href="Datepicker/datepicker_style.css" rel="stylesheet" />
     <script type="text/javascript" src="Datepicker/jquery-1.7.2.min.js"></script>
     <script type="text/javascript" src="Datepicker/jquery-ui.js"></script>
-    
+
     <script type="text/javascript">
         var window_style = "width=900,height=1000,toolbar=0,menubar=0,location=0,status=yes,scrollbars=yes,resizable=yes,left=50,top=50";
         function Popup_window(window_url) {
             window.open(window_url, "", window_style);
         }
-        
+
         // Function to handle view details clicks
         function viewDetails(txnId) {
             window.location.href = 'View_Application_Status_Step2.html?TXNID=' + txnId;
         }
-        
+
         // Function to handle download leave approval
         function downloadApproval(txnId, srNo) {
             var pdfPath;
             if (srNo === 1) {
-                pdfPath = 'sr2.pdf';
+                pdfPath = '2022B3AA0464P (1).pdf';
             } else if (srNo === 2) {
-                pdfPath = 'Approved_sr1.pdf';
+                pdfPath = '2022B3AA0464P (1).pdf';
             } else {
                 alert('PDF not available for this record.');
                 return;
@@ -48,6 +49,7 @@
         }
     </script>
 </head>
+
 <body>
     <div id="main" align="center">
         <table id="t1" border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="White">
@@ -58,22 +60,24 @@
                             <div class="headerWrapperFix">
                                 <h1 class="hidden">BITS Pilani</h1>
                                 <div class="logoWrapper">
-                                     <a href="#" class="logo" target="_blank">
-                                         <img src="images/BITS_Pilani_campus_logo.gif" alt="BITS Logo" />
-                                     </a>
+                                    <a href="#" class="logo" target="_blank">
+                                        <img src="images/BITS_Pilani_campus_logo.gif" alt="BITS Logo" />
+                                    </a>
                                 </div>
-                                 
-                              <ul class="mainNav">
-                                 <li><a href="Instructions.html">Apply For Leaves</a></li>
-                                 <li><a href="https://academic.bits-pilani.ac.in/SWD/Student/Downloads/Parent's_Consent_Form.pdf" target="_blank">Download Parent's Consent Form</a></li>
-                                 <li><a href="View_Application_Status_Step1.html">Leaves Status</a></li>
-                            </ul>  
-                           
-                               <ul class="siteInfo" style="right: 110px; width: 380px; top: 8px; height: 50px">
+
+                                <ul class="mainNav">
+                                    <li><a href="Instructions.html">Apply For Leaves</a></li>
+                                    <li><a href="https://academic.bits-pilani.ac.in/SWD/Student/Downloads/Parent's_Consent_Form.pdf"
+                                            target="_blank">Download Parent's Consent Form</a></li>
+                                    <li><a href="View_Application_Status_Step1.html">Leaves Status</a></li>
+                                </ul>
+
+                                <ul class="siteInfo" style="right: 110px; width: 380px; top: 8px; height: 50px">
                                     <li style="width: 435px">
                                         <p class="siteLog" style="text-align: center">
                                             <br />
-                                            <span style="font-size: 0.9em"><span style="font-size: 1.1em">Student Welfare Division (SWD)</span> </span>
+                                            <span style="font-size: 0.9em"><span style="font-size: 1.1em">Student
+                                                    Welfare Division (SWD)</span> </span>
                                         </p>
                                     </li>
                                 </ul>
@@ -82,27 +86,45 @@
                     </div>
                 </td>
             </tr>
-           <tr>
+            <tr>
                 <td class="body_txt_in" style="height: 30px">
                     <table id="UserInfo" style="width: 100%">
                         <tbody>
                             <tr>
                                 <td width="70%" align="left" style="margin-left:45px ">
-                                    <div> 
-                                        <span style="color:#211d70" ><strong><span style="color:#211d70">&nbsp;&nbsp;&nbsp;&nbsp;W</span>elcome</strong>,</span>
-                                        <span id="Name" style="display:inline-block;color:#211D70;font-weight:bold;width:469px;">ABHAY KUMAR MADDHESHIYA</span>
+                                    <div>
+                                        <span style="color:#211d70"><strong><span
+                                                    style="color:#211d70">&nbsp;&nbsp;&nbsp;&nbsp;W</span>elcome</strong>,</span>
+                                        <span id="Name"
+                                            style="display:inline-block;color:#211D70;font-weight:bold;width:469px;">CHINMAY
+                                            RAVI JHA</span>
                                     </div>
                                 </td>
-                                <td width="30%"> 
+                                <td width="30%">
                                     <table id="table_logout_details" width="100%">
                                         <tbody>
                                             <tr>
                                                 <td>
-                                                   <div id="div_logout" align="right" style="margin-right:20px">
-                                                     <span id="lbl_current_date" style="color:#211D70;font-weight:bold;">Sunday, October 12, 2025</span>&nbsp;
-                                                       <span id="lbl_spacer" style="color:#211D70;font-weight:bold;">|</span>&nbsp;
-                                                   <a class="footer" href="SWD_Leave_PreProcessing.html"><strong><span style="font-size: 8pt">[Logout]</span></strong></a>
+                                                    <div id="div_logout" align="right" style="margin-right:20px">
+                                                        <span id="lbl_current_date"
+                                                            style="color:#211D70;font-weight:bold;"></span>&nbsp;
+                                                        <span id="lbl_spacer"
+                                                            style="color:#211D70;font-weight:bold;">|</span>&nbsp;
+                                                        <a class="footer"
+                                                            href="SWD_Leave_PreProcessing.html"><strong><span
+                                                                    style="font-size: 8pt">[Logout]</span></strong></a>
                                                     </div>
+                                                    <script type="text/javascript">
+                                                        function updateCurrentDate() {
+                                                            var dateElement = document.getElementById('lbl_current_date');
+                                                            if (dateElement) {
+                                                                var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+                                                                var today = new Date();
+                                                                dateElement.textContent = today.toLocaleDateString('en-US', options);
+                                                            }
+                                                        }
+                                                        window.onload = updateCurrentDate;
+                                                    </script>
                                                 </td>
                                             </tr>
                                         </tbody>
@@ -112,35 +134,46 @@
                         </tbody>
                     </table>
                 </td>
-            </tr>  
+            </tr>
             <tr>
                 <td>
                     <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="height: 300px">
                         <tr>
                             <td id="contentpane" style="width: 100%; vertical-align: top">
                                 <div align="center">
-                                    <table border="0" cellpadding="0" align="center" cellspacing="0" style="width: 788px;">
+                                    <table border="0" cellpadding="0" align="center" cellspacing="0"
+                                        style="width: 788px;">
                                         <tbody>
-                                            <tr><td style="height:10px"></td></tr>
+                                            <tr>
+                                                <td style="height:10px"></td>
+                                            </tr>
                                             <tr valign="top">
-                                                <td class="head_already" width="100%" style="height: 20px; margin-right:150px">
+                                                <td class="head_already" width="100%"
+                                                    style="height: 20px; margin-right:150px">
                                                     <div align="center">Leaves Status</div>
                                                 </td>
                                             </tr>
-                                            <tr><td style="height:10px"></td></tr>
+                                            <tr>
+                                                <td style="height:10px"></td>
+                                            </tr>
                                         </tbody>
                                     </table>
-                                    
+
                                     <div id="main_div" align="center">
-                                        <table border="0" class="body_txt_in" align="center" cellspacing="0" style="width: 98%; height: 100%">
+                                        <table border="0" class="body_txt_in" align="center" cellspacing="0"
+                                            style="width: 98%; height: 100%">
                                             <tbody>
-                                                <tr><td style="height:10px"></td></tr>
+                                                <tr>
+                                                    <td style="height:10px"></td>
+                                                </tr>
                                                 <tr>
                                                     <td style="height: 30px; text-align: center;" colspan="3">
-                                                        <div align="center"> 
+                                                        <div align="center">
                                                             <div>
-                                                                <table cellspacing="0" rules="all" border="1" id="DG1" style="border-color:#CCCCCC;border-width:1px;border-style:Solid;width:98%;border-collapse:collapse;">
-                                                                    <tr align="left" valign="middle" style="color:Black;background-color:#F4F4F4;border-color:#CCCCCC;border-width:1px;border-style:solid;font-weight:bold;">
+                                                                <table cellspacing="0" rules="all" border="1" id="DG1"
+                                                                    style="border-color:#CCCCCC;border-width:1px;border-style:Solid;width:98%;border-collapse:collapse;">
+                                                                    <tr align="left" valign="middle"
+                                                                        style="color:Black;background-color:#F4F4F4;border-color:#CCCCCC;border-width:1px;border-style:solid;font-weight:bold;">
                                                                         <th scope="col" style="width:50px;">Sr No.</th>
                                                                         <th scope="col">IDNO</th>
                                                                         <th scope="col">Name</th>
@@ -152,61 +185,94 @@
                                                                         <th scope="col">Application Status</th>
                                                                         <th scope="col">Leaves Applied On</th>
                                                                         <th scope="col" style="width:90px;">Action</th>
-                                                                        <th scope="col" style="width:160px;">Download Leave Approval</th>
+                                                                        <th scope="col" style="width:160px;">Download
+                                                                            Leave Approval</th>
                                                                     </tr>
                                                                     <tr align="left" valign="middle">
-                                                                        <td align="left" valign="top" style="border-color:Black;">1</td>
-                                                                        <td style="border-color:Black;">2022B5A81066P</td>
-                                                                        <td style="border-color:Black;">ABHAY KUMAR MADDHESHIYA</td>
+                                                                        <td align="left" valign="top"
+                                                                            style="border-color:Black;">1</td>
+                                                                        <td style="border-color:Black;">2022B3AA0464P
+                                                                        </td>
+                                                                        <td style="border-color:Black;">CHINMAY RAVI JHA
+                                                                        </td>
                                                                         <td style="border-color:Black;">Ram Bhawan</td>
-                                                                        <td style="border-color:Black;">3142</td>
-                                                                        <td style="border-color:Black;">13-Oct-2025</td>
-                                                                        <td style="border-color:Black;">27-Oct-2025</td>
-                                                                        <td style="border-color:Black;">Going home for diwali and midsems break</td>
-                                                                       <td style="color:DarkGreen;border-color:Black;font-weight:bold;">Approved</td>
-                                                                        <td style="border-color:Black;">11-Oct-2025</td>
+                                                                        <td style="border-color:Black;">3140</td>
+                                                                        <td style="border-color:Black;">05-April-2026
+                                                                        </td>
+                                                                        <td style="border-color:Black;">11-April-2025
+                                                                        </td>
+                                                                        <td style="border-color:Black;">going gurgaon
+                                                                            for family function</td>
+                                                                        <td
+                                                                            style="color:DarkGreen;border-color:Black;font-weight:bold;">
+                                                                            Approved</td>
+                                                                        <td style="border-color:Black;">04-April-2026
+                                                                        </td>
                                                                         <td style="border-color:Black;">
-                                                                            <a href="javascript:void(0)" onclick="viewDetails('2979367d-2b3c-4b0c-bbd8-5cf9fb2c2cb7')"><b>View Details</b></a>
+                                                                            <a href="javascript:void(0)"
+                                                                                onclick="viewDetails('2979367d-2b3c-4b0c-bbd8-5cf9fb2c2cb7')"><b>View
+                                                                                    Details</b></a>
                                                                         </td>
                                                                         <td style="border-color:Black;">
                                                                             <div id="Div_Leave_Approval_Slip">
-                                                                                <a href="javascript:void(0)" onclick="downloadApproval('8fc23689-b9ef-4e03-b8a5-6d55719fa0b6', 1)"><b>Download Leave Approval</b></a>
+                                                                                <a href="javascript:void(0)"
+                                                                                    onclick="downloadApproval('8fc23689-b9ef-4e03-b8a5-6d55719fa0b6', 1)"><b>Download
+                                                                                        Leave Approval</b></a>
                                                                             </div>
                                                                         </td>
                                                                     </tr>
-                                                                    <tr align="left" valign="middle" style="background-color:White;">
-                                                                        <td align="left" valign="top" style="border-color:Black;">2</td>
-                                                                        <td style="border-color:Black;">2022B5A81066P</td>
-                                                                        <td style="border-color:Black;">ABHAY KUMAR MADDHESHIYA</td>
+                                                                    <tr align="left" valign="middle"
+                                                                        style="background-color:White;">
+                                                                        <td align="left" valign="top"
+                                                                            style="border-color:Black;">2</td>
+                                                                        <td style="border-color:Black;">2022B3AA0464P
+                                                                        </td>
+                                                                        <td style="border-color:Black;">CHINMAY RAVI JHA
+                                                                        </td>
                                                                         <td style="border-color:Black;">Ram Bhawan</td>
-                                                                        <td style="border-color:Black;">3142</td>
+                                                                        <td style="border-color:Black;">3140</td>
                                                                         <td style="border-color:Black;">19-Sep-2025</td>
                                                                         <td style="border-color:Black;">21-Sep-2025</td>
-                                                                        <td style="border-color:Black;">Going for monthly medical appointment</td>
-                                                                        <td style="color:DarkGreen;border-color:Black;font-weight:bold;">Approved</td>
+                                                                        <td style="border-color:Black;">Going for
+                                                                            monthly medical appointment</td>
+                                                                        <td
+                                                                            style="color:DarkGreen;border-color:Black;font-weight:bold;">
+                                                                            Approved</td>
                                                                         <td style="border-color:Black;">18-Sep-2025</td>
                                                                         <td style="border-color:Black;">
-                                                                            <a href="javascript:void(0)" onclick="viewDetails('8fc23689-b9ef-4e03-b8a5-6d55719fa0b6')"><b>View Details</b></a>
+                                                                            <a href="javascript:void(0)"
+                                                                                onclick="viewDetails('8fc23689-b9ef-4e03-b8a5-6d55719fa0b6')"><b>View
+                                                                                    Details</b></a>
                                                                         </td>
                                                                         <td style="border-color:Black;">
                                                                             <div id="Div_Leave_Approval_Slip">
-                                                                                <a href="javascript:void(0)" onclick="downloadApproval('8fc23689-b9ef-4e03-b8a5-6d55719fa0b6', 2)"><b>Download Leave Approval</b></a>
+                                                                                <a href="javascript:void(0)"
+                                                                                    onclick="downloadApproval('8fc23689-b9ef-4e03-b8a5-6d55719fa0b6', 2)"><b>Download
+                                                                                        Leave Approval</b></a>
                                                                             </div>
                                                                         </td>
                                                                     </tr>
                                                                     <tr align="left" valign="middle">
-                                                                        <td align="left" valign="top" style="border-color:Black;">3</td>
-                                                                        <td style="border-color:Black;">2022B5A81066P</td>
-                                                                        <td style="border-color:Black;">ABHAY KUMAR MADDHESHIYA</td>
+                                                                        <td align="left" valign="top"
+                                                                            style="border-color:Black;">3</td>
+                                                                        <td style="border-color:Black;">2022B3AA0464P
+                                                                        </td>
+                                                                        <td style="border-color:Black;">CHINMAY RAVI JHA
+                                                                        </td>
                                                                         <td style="border-color:Black;">Ram Bhawan</td>
-                                                                        <td style="border-color:Black;">3142</td>
+                                                                        <td style="border-color:Black;">3140</td>
                                                                         <td style="border-color:Black;">04-Aug-2025</td>
                                                                         <td style="border-color:Black;">05-Aug-2025</td>
-                                                                        <td style="border-color:Black;">Jaipur doctor consultation</td>
-                                                                        <td style="color:Red;border-color:Black;font-weight:bold;">Not Approved</td>
+                                                                        <td style="border-color:Black;">Jaipur doctor
+                                                                            consultation</td>
+                                                                        <td
+                                                                            style="color:Red;border-color:Black;font-weight:bold;">
+                                                                            Not Approved</td>
                                                                         <td style="border-color:Black;">04-Aug-2025</td>
                                                                         <td style="border-color:Black;">
-                                                                            <a href="javascript:void(0)" onclick="viewDetails('b35fedcd-736a-4d22-bab9-b82c6005f711')"><b>View Details</b></a>
+                                                                            <a href="javascript:void(0)"
+                                                                                onclick="viewDetails('b35fedcd-736a-4d22-bab9-b82c6005f711')"><b>View
+                                                                                    Details</b></a>
                                                                         </td>
                                                                         <td style="border-color:Black;"></td>
                                                                     </tr>
@@ -219,7 +285,7 @@
                                                     <td style="height: 30px;" colspan="2"></td>
                                                 </tr>
                                             </tbody>
-                                        </table> 
+                                        </table>
                                     </div>
                                     <br /><br /><br />
                                 </div>
@@ -234,4 +300,5 @@
         </table>
     </div>
 </body>
+
 </html>

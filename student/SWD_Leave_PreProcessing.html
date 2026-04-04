@@ -104,7 +104,7 @@ function __doPostBack(eventTarget, eventArgument) {
                             <tbody>
                             <tr>
                             <td width="70%" align="left"style="margin-left:45px "><div> <span style="color:#211d70" ><strong><span style="color:#211d70">&nbsp;&nbsp;&nbsp;&nbsp;W</span>elcome</strong>,</span>
-                              <span id="ctl00_Name" style="display:inline-block;color:#211D70;font-weight:bold;width:469px;">ABHAY KUMAR MADDHESHIYA</span></div>
+                              <span id="ctl00_Name" style="display:inline-block;color:#211D70;font-weight:bold;width:469px;">CHINMAY RAVI JHA</span></div>
                             
                             
                             </td>
@@ -115,11 +115,22 @@ function __doPostBack(eventTarget, eventArgument) {
                                                 
                                                 <td>
                                                    <div id="div_logout" align="right" style="margin-right:20px">
-                                                     <span id="ctl00_lbl_current_date" style="color:#211D70;font-weight:bold;">Sunday, October 12, 2025</span>&nbsp;
+                                                     <span id="ctl00_lbl_current_date" style="color:#211D70;font-weight:bold;"></span>&nbsp;
                                                        <span id="ctl00_lbl_spacer" style="color:#211D70;font-weight:bold;">|</span>&nbsp;
                                                   
                                                    <a class="footer" href="Logout.aspx"><strong><span style="font-size: 8pt">[Logout]</span></strong></a>
                                                     </div>
+                                                    <script type="text/javascript">
+                                                        function updateCurrentDate() {
+                                                            var dateElement = document.getElementById('ctl00_lbl_current_date');
+                                                            if (dateElement) {
+                                                                var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+                                                                var today = new Date();
+                                                                dateElement.textContent = today.toLocaleDateString('en-US', options);
+                                                            }
+                                                        }
+                                                        window.onload = updateCurrentDate;
+                                                    </script>
                                                 </td>
                                             </tr>
                                         </tbody>
